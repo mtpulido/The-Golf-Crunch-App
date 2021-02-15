@@ -91,7 +91,7 @@ records: [
 Planning and visualization. I know exactly what I need, where I need it, in what order to do it, and how to acheive it as shown above in my timeframes. The key for the MVP is div-ing/classing things appropriately in order to display them in the exact maner that I need to. 
 
 ### Weaknesses:
-Memory. I know i'll need to reference back to certain code-snippets/labs/homeworks to remember exactly how to do somemthing. I'll have these ready to rock prior to approval. 
+Memory. I know i'll need to reference back to certain code-snippets/labs/homeworks to remember exactly how to do somemthing.  
 
 ### Opportunities:
 Show that while i'm by no means the fastest/best learner, my ability to apply and execute knowledge is Top-Notch. 
