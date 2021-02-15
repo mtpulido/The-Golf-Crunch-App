@@ -1,70 +1,98 @@
-# Getting Started with Create React App
+## Project Name
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The Golf Crunch
 
-## Available Scripts
+## Project Description
 
-In the project directory, you can run:
+The Golf Crunch seeks to improve the experience of golfers across all skill levels. It allows people to compile their stats and score from a round of golf, track them, and see how they measure up to others, all through a mobile app. It's a place for people to see where specifically in their golf game they need to spend time practicing, and translate that information to lower scores.
 
-### `npm start`
+## Wireframes
+![img](https://i.imgur.com/Kkm29oA.png) ![img](https://i.imgur.com/eMaTr45.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+![img](https://i.imgur.com/rageGpq.png) ![img](https://i.imgur.com/yZZqW20.png)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+![img](https://i.imgur.com/bvVAV33.png)
+ 
 
-### `npm test`
+## Component Hierarchy
+![img](https://i.imgur.com/9Bxyx2g.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## API and Data Sample
+```json
+records: [
+  {
+    id: "rec3dO5cqe6VDxJF4",
+    fields: {
+         greens: "9",
+         player: "Tim Supranowitz",
+         score: "86",
+         possible_fairways: "14",
+         possible_up_and_downs: "9",
+         putts: "36",
+         holes: "18",
+         fairways_hit: "7",
+         course: "Torrey Pines",
+         up_and_downs: "3"
+    },
+  createdTime: "2021-02-13T20:17:17.000Z"
+  },
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### MVP 
+- Home page with buttons that route user to each page
+- Render form to create new airtable Golf data through post request in "enter round"
+- Render previously submitted rounds from airtable data through get reqeust in "view scores"
+- Render mission statement in "mission statement"
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### PostMVP  
+- create a detail expand for viewing rounds to limit new pages user has to navigate
+- create an analysis of a submitted round by returning a one page message to the user based upon their subimtted statistics.
+- create animation for "analyzing your round"
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Project Schedule
 
-### `npm run eject`
+|  Day | Deliverable | Status
+|---|---| ---|
+|Feb. 13-16| project planning/preparation/approval | Incomplete
+|Feb. 16| App.js layout, Nav Bar, get request to render all rounds | Incomplete
+|Feb. 17|  Form to post rounds, render mission statement | Incomplete
+|Feb. 18| Style with Grid/flexbox and basic CSS | Incomplete
+|Feb. 19| Media queries, responsive design , Finish MVP | Incomplete
+|Feb. 20-22| Tackle Post MVP items | Incomplete
+|Feb. 23| Presentations | Incomplete
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Timeframes
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+| Component | Priority | Estimated Time | Time Invested | Actual Time |
+| --- | :---: |  :---: | :---: | :---: |
+| planning/prep and creating readme | H | 8hrs| 8hrs | 8hrs |
+| .services for hiding/securing API information | H | 1hr|  |  |
+| App.js/index.js structure for rendering and Linking/Routing | H | 1.5hr|  |  |
+| component basic creation/organization/imports | H | 2hr|  |  |
+| Homepage button creation/routing | H | 2hr|  |  |
+| Basic Nav Bar | H | 1hr|  |  | 
+| conditionally render Home Button utilizing Link | H | 1.5hr|  |  |
+| Render API data in view scores | H | 2hr|  |  |
+| Structure API data via Grid/flexbox | H | 2hr|  |  |
+| convert iso8601 to local date in view scores | H | 2hr|  |  |
+| Render form via Post request in enter round| H | 2hr|  |  |
+| Structure form via GRID/flexbox | H | 4hr|  |  |
+| Render mission statement in mission statement | H | 1.5hr|  |  |
+| CSS styling for each component | H | 4hr|  |  |
+| Media Queries/responsive design | H | 4hr|  |  |
+| Total | H | 38.5hrs|  |  |
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## SWOT Analysis
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Strengths:
+Planning and visualization. I know exactly what I need, where I need it, in what order to do it, and how to acheive it as shown above in my timeframes. The key for the MVP is div-ing/classing things appropriately in order to display them in the exact maner that I need to. 
 
-## Learn More
+### Weaknesses:
+Memory. I know i'll need to reference back to certain code-snippets/labs/homeworks to remember exactly how to do somemthing. I'll have these ready to rock prior to approval. 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Opportunities:
+Show that while i'm by no means the fastest/best learner, my ability to apply and execute knowledge is Top-Notch. 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Threats:
+The form is going to be very time consuming in getting it's actual layout to match my WireFrames. Stick with it. 
