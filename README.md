@@ -12,6 +12,8 @@ The Golf Crunch seeks to improve the experience of golfers across all skill leve
 ![img](https://i.imgur.com/rageGpq.png) ![img](https://i.imgur.com/yZZqW20.png)
 
 ![img](https://i.imgur.com/bvVAV33.png)
+
+![img](https://i.imgur.com/h2oX7C6.png) ![img](https://i.imgur.com/R52o8oJ.png)
  
 
 ## Component Hierarchy
