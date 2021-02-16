@@ -2,37 +2,86 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+  text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.button-text {
+  color: black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+
+
+.nav-bar {
+  height: 15%;
+  border: solid black 2px;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+
+.home-button {
+  height: 80%;
+  width: 100%;
+  border: solid black 2px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 30px;
+  text-transform: none;
+  color: black;
 }
 
-.App-link {
-  color: #61dafb;
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.form-button {
+  height: 180px;
+  width: 180px;
+  margin-top: 20px;
+  background-image: url("https://lh3.googleusercontent.com/proxy/PgJnIOkfSL4B7OqfQCBjR_FS4OqaRXpuK1VVA2GyKi0TtYFeWtJTFP0TyVpaFYZNV8d2g7768TO5n3dYLen0TK400X5vYLZLy8Xa6Mf007332rWqgbY");
+  background-size: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: drop-shadow(1px 1px 2px  black);
+}
+
+.rounds-button {
+  height: 180px;
+  width: 180px;
+  margin-top: 20px;
+  background-image: url("https://lh3.googleusercontent.com/proxy/PgJnIOkfSL4B7OqfQCBjR_FS4OqaRXpuK1VVA2GyKi0TtYFeWtJTFP0TyVpaFYZNV8d2g7768TO5n3dYLen0TK400X5vYLZLy8Xa6Mf007332rWqgbY");
+  background-size: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: drop-shadow(1px 1px 2px  black);
+}
+
+.mission-button {
+  height: 180px;
+  width: 180px;
+  margin-top: 20px;
+  background-image: url("https://lh3.googleusercontent.com/proxy/PgJnIOkfSL4B7OqfQCBjR_FS4OqaRXpuK1VVA2GyKi0TtYFeWtJTFP0TyVpaFYZNV8d2g7768TO5n3dYLen0TK400X5vYLZLy8Xa6Mf007332rWqgbY");
+  background-size: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: drop-shadow(1px 1px 2px  black);
+}
+
+
+.round-of-golf {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
 }
