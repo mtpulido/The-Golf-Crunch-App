@@ -8,6 +8,7 @@ import Mission from "./Components/Mission"
 import { useState, useEffect } from "react"
 import { baseURL, config } from "./services"
 import axios from 'axios';
+import RenderDetails from "./Components/RenderDetails"
 
 
 function App() {
@@ -51,7 +52,13 @@ function App() {
       
     <Route path="/mission">
         <Mission />
-    </Route>  
+      </Route>  
+      
+      <Route path="/details">
+      {golfRounds.map((golfRound) => (
+          <RenderDetails golfRound={golfRound} />
+        ))}
+      </Route>
       
 
     </div>

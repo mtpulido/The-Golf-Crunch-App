@@ -1,4 +1,4 @@
-import { Link, Route } from "react-router-dom" 
+import { Link } from "react-router-dom" 
 
 
 
@@ -11,7 +11,7 @@ function RenderRound(props) {
 
         <Link to="/details">
           <div>
-            <p>Details</p>
+            <p className="button-text">Details</p>
           </div>
         </Link>
       </div>
