@@ -1,28 +1,14 @@
-import {useState, useEffect } from "react"
-import { axios } from "axios"
-import { baseURL, config } from "../services"
+import { useState } from "react"
+import { Link } from "react-router-dom"
 
-
-
-function RoundForm(props) {
+function Form() {
   const [player, setPlayer] = useState("")
   const [course, setCourse] = useState("")
   const [score, setScore] = useState(null)
   const [holes, setHoles] = useState(null)
-  const [fairwaysHit, setFairwaysHit] = useState(null)
-  const [possibleFairways, setPossibleFairways] = useState(null)
-  const [greens, setGreens] = useState(null)
-  const [putts, setPutts] = useState(null)
-  const [upAndDowns, setUpAndDowns] = useState(null)
-  const [possibleUpAndDowns, setPossibleUpAndDowns] = useState(null)
-
-  
-
 
   return (
-    <div className="form-round-info container">
-      
-      <form>
+    <div>
 
         <h2>Round Info</h2>
 
@@ -68,12 +54,15 @@ function RoundForm(props) {
             placeholder="18..."
             value={holes}
             onChange={(e) => setHoles(e.target.value)}
-          />
-        </div>
-    </form>
+        />
+      </div>
+
+      <Link to="/form1">
+        <button>Next</button>
+      </Link>
       
     </div>
   )
 }
 
-export default RoundForm
+export default Form
