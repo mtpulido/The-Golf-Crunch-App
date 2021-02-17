@@ -28,14 +28,14 @@ function ParentForm(props) {
     const fields = {
       player,
       course,
-      score,
-      holes,
-      fairwaysHit,
-      possibleFairways,
-      greens,
-      putts,
-      upAndDowns,
-      possibleUpAndDowns,
+      score: parseInt(score),
+      holes: parseInt(holes), 
+      fairwaysHit: parseInt(fairwaysHit),
+      possibleFairways: parseInt(possibleFairways),
+      greens: parseInt(greens),
+      putts: parseInt(putts),
+      upAndDowns: parseInt(upAndDowns),
+      possibleUpAndDowns: parseInt(possibleUpAndDowns),
     }
 
     await axios.post(baseURL, { fields }, config)
