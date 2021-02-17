@@ -44,7 +44,11 @@ function Form2() {
             value={possibleUpAndDowns}
             onChange={(e) => setPossibleUpAndDowns(e.target.value)}
           />
-        </div>
+      </div>
+      
+        <Link to="/form1">
+        <button>Back</button>
+      </Link>
       
       <button>Submit</button>
     </div>

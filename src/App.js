@@ -2,13 +2,15 @@ import './App.css';
 import { Link, Route } from "react-router-dom"
 import Nav from "./Components/Nav"
 import Home from "./Components/Home"
-import RoundForm from "./Components/Form/RoundForm"
-import RenderRound from "./Components/RenderRounds"
+import ViewScores from "./Components/ViewScores"
 import Mission from "./Components/Mission"
 import { useState, useEffect } from "react"
 import { baseURL, config } from "./services"
 import axios from 'axios';
-import RenderDetails from "./Components/RenderDetails"
+import ViewDetails from "./Components/ViewDetails"
+import Form from "./Components/Form/Form"
+import Form1 from "./Components/Form/Form1"
+import Form2 from "./Components/Form/Form2"
 
 
 function App() {
@@ -39,26 +41,46 @@ function App() {
       <Home />
       </Route>
 
-    <Route path="/form">
-        <RoundForm />
-    </Route>  
+
+  
+    <form>
+        <Route exact path="/form">
+          <Form />
+        </Route>  
+        
+
+        <Route path="/form1">
+          <Form1 />
+        </Route>
+
+        <Route path="/form2">
+          <Form2 />
+        </Route>
+        
+    </form>
+   
       
-      <Route path="/rounds">
+
+      <Route exact path="/rounds">
         <h2>Rounds</h2>
         {golfRounds.map((golfRound) => (
-          <RenderRound golfRound={golfRound} />
+          <ViewScores
+            golfRound={golfRound}
+            key={golfRound.id}
+          />
         ))}
     </Route>  
       
+
+      
+    <Route path="/rounds/:id">
+        <ViewDetails golfRounds={golfRounds}/>
+      </Route>
+
+
     <Route path="/mission">
         <Mission />
       </Route>  
-      
-      <Route path="/details">
-      {golfRounds.map((golfRound) => (
-          <RenderDetails golfRound={golfRound} />
-        ))}
-      </Route>
       
 
     </div>

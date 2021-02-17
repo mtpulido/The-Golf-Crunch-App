@@ -6,8 +6,9 @@ function Form1() {
   const [possibleFairways, setPossibleFairways] = useState(null)
   const [greens, setGreens] = useState(null)
 
+
+
   return (
-    
     <div>
 
         <h2>Long Game</h2>
@@ -44,7 +45,11 @@ function Form1() {
             value={greens}
             onChange={(e) => setGreens(e.target.value)}
           />
-        </div>
+      </div>
+      
+      <Link to="/form">
+        <button>Back</button>
+      </Link>
 
       <Link to="/form2" >
         <button>Next</button>

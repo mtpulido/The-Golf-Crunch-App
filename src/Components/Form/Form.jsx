@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { Link } from "react-router-dom"
 
-function Form() {
+function Form(props) {
   const [player, setPlayer] = useState("")
   const [course, setCourse] = useState("")
   const [score, setScore] = useState(null)

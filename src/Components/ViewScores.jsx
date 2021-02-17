@@ -2,14 +2,15 @@ import { Link } from "react-router-dom"
 
 
 
-function RenderRound(props) {
+
+function ViewScores(props) {
   return (
     <div>
       <div className="round-of-golf">
 
         {props.golfRound.fields.player} | {props.golfRound.fields.course} | {props.golfRound.fields.score}
 
-        <Link to="/details">
+        <Link to={`/rounds/${props.golfRound.id}`}>
           <div>
             <p className="button-text">Details</p>
           </div>
@@ -20,4 +21,4 @@ function RenderRound(props) {
   )
 }
 
-export default RenderRound
+export default ViewScores
