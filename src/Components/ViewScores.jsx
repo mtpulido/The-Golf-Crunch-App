@@ -10,7 +10,7 @@ function ViewScores(props) {
 
         {props.golfRound.fields.player} | {props.golfRound.fields.course} | {props.golfRound.fields.score}
 
-        <Link to={`/rounds/${props.golfRound.id}`}>
+        <Link to={`/scores/${props.golfRound.id}`}>
           <div>
             <p className="button-text">Details</p>
           </div>

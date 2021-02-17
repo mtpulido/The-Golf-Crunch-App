@@ -18,36 +18,28 @@ function App() {
   const [toggleFetch, setToggleFetch] = useState(false)
 
   useEffect(() => {
-
-
     const getGolfData = async () => {
-
       const response = await axios.get(baseURL, config)
       setGolfRounds(response.data.records)
     }
     getGolfData()
-
   }, [toggleFetch])
-
-
-
-
 
   return (
     <div className="App">
+      
       <Nav />
-    
+  
+      
     <Route exact path="/">
       <Home />
       </Route>
-
 
   
     <form>
         <Route exact path="/form">
           <Form />
         </Route>  
-        
 
         <Route path="/form1">
           <Form1 />
@@ -56,12 +48,10 @@ function App() {
         <Route path="/form2">
           <Form2 />
         </Route>
-        
     </form>
-   
-      
 
-      <Route exact path="/rounds">
+    
+      <Route exact path="/scores">
         <h2>Rounds</h2>
         {golfRounds.map((golfRound) => (
           <ViewScores
@@ -71,9 +61,8 @@ function App() {
         ))}
     </Route>  
       
-
       
-    <Route path="/rounds/:id">
+    <Route path="/scores/:id">
         <ViewDetails golfRounds={golfRounds}/>
       </Route>
 
@@ -81,8 +70,6 @@ function App() {
     <Route path="/mission">
         <Mission />
       </Route>  
-      
-
     </div>
   );
 }

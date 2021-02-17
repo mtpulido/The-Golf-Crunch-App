@@ -4,8 +4,8 @@ import { Link } from "react-router-dom"
 function Form(props) {
   const [player, setPlayer] = useState("")
   const [course, setCourse] = useState("")
-  const [score, setScore] = useState(null)
-  const [holes, setHoles] = useState(null)
+  const [score, setScore] = useState()
+  const [holes, setHoles] = useState()
 
   return (
     <div>

@@ -2,9 +2,9 @@ import { useState } from "react"
 import { Link } from "react-router-dom"
 
 function Form2() {
-  const [putts, setPutts] = useState(null)
-  const [upAndDowns, setUpAndDowns] = useState(null)
-  const [possibleUpAndDowns, setPossibleUpAndDowns] = useState(null)
+  const [putts, setPutts] = useState()
+  const [upAndDowns, setUpAndDowns] = useState()
+  const [possibleUpAndDowns, setPossibleUpAndDowns] = useState()
 
   return (
     
@@ -49,7 +49,7 @@ function Form2() {
         <Link to="/form1">
         <button>Back</button>
       </Link>
-      
+
       <button>Submit</button>
     </div>
   )

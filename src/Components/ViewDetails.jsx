@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
-import {useParams} from "react-router-dom"
+import { useParams } from "react-router-dom"
+import { Link } from "react-router-dom" 
 
 
 
@@ -37,7 +38,7 @@ function ViewDetails(props) {
         setPutts(foundGolfRound.fields.putts)
         setUpAndDowns(foundGolfRound.fields.upAndDowns)
         setPossibleUpAndDowns(foundGolfRound.fields.possibleUpAndDowns)
-        setCreatedTime(foundGolfRound.createtTime)
+        setCreatedTime(foundGolfRound.createdTime)
       }
     }
   }, [params.id, props.golfRounds])
@@ -59,7 +60,9 @@ function ViewDetails(props) {
         Short Game<br></br>
       Up & Downs: {upAndDowns}/{possibleUpAndDowns} | Putts: {putts}
       </div>
-
+      <Link to="/scores">
+      <button>Back</button>
+      </Link>
 
   </div>
   )

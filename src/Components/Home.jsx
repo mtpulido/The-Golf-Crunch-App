@@ -11,7 +11,7 @@ function Home() {
       </div>
       </Link>
 
-      <Link to="/rounds">
+      <Link to="/scores">
         <div className="rounds-button">
           <h2 className="button-text">View Scores</h2>
         </div>

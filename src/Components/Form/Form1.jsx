@@ -2,9 +2,9 @@ import { useState } from "react"
 import { Link } from "react-router-dom"
 
 function Form1() {
-  const [fairwaysHit, setFairwaysHit] = useState(null)
-  const [possibleFairways, setPossibleFairways] = useState(null)
-  const [greens, setGreens] = useState(null)
+  const [fairwaysHit, setFairwaysHit] = useState()
+  const [possibleFairways, setPossibleFairways] = useState()
+  const [greens, setGreens] = useState()
 
 
 
