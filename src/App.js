@@ -8,7 +8,7 @@ import { useState, useEffect } from "react"
 import { baseURL, config } from "./services"
 import axios from 'axios';
 import ViewDetails from "./Components/ViewDetails"
-import ParentForm from "./Components/Form/ParentForm"
+import ParentForm from "./Components/ParentForm"
 
 
 function App() {
@@ -34,7 +34,7 @@ function App() {
     </Route>
 
     <Route path="/form">
-        <ParentForm />
+        <ParentForm setToggleFetch={setToggleFetch}/>
     </Route>
 
     

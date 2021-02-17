@@ -1,10 +1,12 @@
 import { useState } from "react"
+import {baseURL, config} from "../services"
+import axios from "axios"
 import { Route } from "react-router-dom"
 import Form from "./Form"
 import Form1 from "./Form1"
 import Form2 from "./Form2"
 
-function ParentForm() {
+function ParentForm(props) {
   const [player, setPlayer] = useState("")
   const [course, setCourse] = useState("")
   const [score, setScore] = useState("")
@@ -18,9 +20,32 @@ function ParentForm() {
   const [upAndDowns, setUpAndDowns] = useState("")
   const [possibleUpAndDowns, setPossibleUpAndDowns] = useState("")
 
+
+  
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+
+    const fields = {
+      player,
+      course,
+      score,
+      holes,
+      fairwaysHit,
+      possibleFairways,
+      greens,
+      putts,
+      upAndDowns,
+      possibleUpAndDowns,
+    }
+
+    await axios.post(baseURL, { fields }, config)
+    props.setToggleFetch((curr) => !curr)
+
+  }
+
+
   return (
-    <div>
-    <form>
+    <form onSubmit={handleSubmit}>
     <Route exact path="/form">
         <Form
           player={player}
@@ -57,7 +82,6 @@ function ParentForm() {
           />
     </Route>
     </form>
-    </div>
   )
 }
 
