@@ -1,26 +1,22 @@
 import { useState } from "react"
 import { Link } from "react-router-dom"
 
-function Form1() {
-  const [fairwaysHit, setFairwaysHit] = useState()
-  const [possibleFairways, setPossibleFairways] = useState()
-  const [greens, setGreens] = useState()
-
-
+function Form1(props) {
 
   return (
-    <div>
+    <div className="form-info-container">
 
-        <h2>Long Game</h2>
+        <p>Long Game</p>
 
         <div className="form-fairways-hit">
           <label htmlFor="fairways"> Fairways Hit: </label>
           <input
+            className="number-input"
             type="number"
             id="fairways"
             placeholder="8..."
-            value={fairwaysHit}
-            onChange={(e) => setFairwaysHit(e.target.value)}
+            value={props.fairwaysHit}
+            onChange={(e) => props.setFairwaysHit(e.target.value)}
           />
         </div>
         
@@ -28,22 +24,24 @@ function Form1() {
         <div className="form-fairways-possible">
           <label htmlFor="fairways-possible"> Possible Fairways (no par 3s): </label>
           <input
+            className="number-input"
             type="number"
             id="fairways-possible"
             placeholder="14..."
-            value={possibleFairways}
-            onChange={(e) => setPossibleFairways(e.target.value)}
+            value={props.possibleFairways}
+            onChange={(e) => props.setPossibleFairways(e.target.value)}
           />
         </div>
 
         <div className="form-greens">
           <label htmlFor="greens"> Greens in Regulation: </label>
           <input
+            className="number-input"
             type="number"
             id="greens"
             placeholder="11..."
-            value={greens}
-            onChange={(e) => setGreens(e.target.value)}
+            value={props.greens}
+            onChange={(e) => props.setGreens(e.target.value)}
           />
       </div>
       
@@ -51,7 +49,7 @@ function Form1() {
         <button>Back</button>
       </Link>
 
-      <Link to="/form2" >
+      <Link to="/form/2" >
         <button>Next</button>
       </Link>
       

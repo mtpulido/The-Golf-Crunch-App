@@ -8,9 +8,7 @@ import { useState, useEffect } from "react"
 import { baseURL, config } from "./services"
 import axios from 'axios';
 import ViewDetails from "./Components/ViewDetails"
-import Form from "./Components/Form/Form"
-import Form1 from "./Components/Form/Form1"
-import Form2 from "./Components/Form/Form2"
+import ParentForm from "./Components/Form/ParentForm"
 
 
 function App() {
@@ -33,25 +31,14 @@ function App() {
       
     <Route exact path="/">
       <Home />
-      </Route>
+    </Route>
 
-  
-    <form>
-        <Route exact path="/form">
-          <Form />
-        </Route>  
-
-        <Route path="/form1">
-          <Form1 />
-        </Route>
-
-        <Route path="/form2">
-          <Form2 />
-        </Route>
-    </form>
+    <Route path="/form">
+        <ParentForm />
+    </Route>
 
     
-      <Route exact path="/scores">
+    <Route exact path="/scores">
         <h2>Rounds</h2>
         {golfRounds.map((golfRound) => (
           <ViewScores
@@ -64,12 +51,12 @@ function App() {
       
     <Route path="/scores/:id">
         <ViewDetails golfRounds={golfRounds}/>
-      </Route>
+    </Route>
 
 
     <Route path="/mission">
         <Mission />
-      </Route>  
+    </Route>  
     </div>
   );
 }

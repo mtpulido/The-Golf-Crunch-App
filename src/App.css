@@ -24,7 +24,7 @@ a {
 }
 
 .home-button {
-  height: 80%;
+  height: 75px;
   width: 100%;
   border: solid black 2px;
   display: flex;
@@ -85,3 +85,15 @@ a {
   border-top: 2px solid black;
   border-bottom: 2px solid black;
 }
+
+.number-input {
+  width: 30px;
+}
+
+.form-info-container {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  padding-bottom: 10px;
+}
+
+
