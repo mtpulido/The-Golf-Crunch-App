@@ -47,6 +47,7 @@ function ViewDetails(props) {
         setCreatedTime(foundGolfRound.createdTime)
       }
     }
+      window.scrollTo(0, 0);
   }, [params.id, props.golfRounds])
 
   return (

@@ -4,11 +4,14 @@ import { Link } from "react-router-dom"
 function Form2(props) {
 
   return (
-    <div className="form-info-container">
 
-        <p>Short Game</p>
+    <div className="form-parent-container">
 
-        <div className="form-putts">
+    <div className="form-shortgame-container">
+
+        <p id="shorttgame-heading">Short Game</p>
+
+        <div id="form-putts">
           <label htmlFor="putts"> Putts: </label>
           <input
             className="number-input"
@@ -21,7 +24,7 @@ function Form2(props) {
         </div>
         
 
-        <div className="form-up-and-downs">
+        <div id="form-up-and-downs">
           <label htmlFor="up-and-downs"> Up & Downs: </label>
           <input
             className="number-input"
@@ -33,7 +36,7 @@ function Form2(props) {
           />
         </div>
 
-        <div className="form-possible-up-and-downs">
+        <div id="form-possible-up-and-downs">
           <label htmlFor="possible-up-and-downs"> Possible Up & Downs: </label>
           <input
             className="number-input"
@@ -44,12 +47,16 @@ function Form2(props) {
             onChange={(e) => props.setPossibleUpAndDowns(e.target.value)}
           />
       </div>
+      </div>
       
-        <Link to="/form/1">
-        <button>Back</button>
-      </Link>
 
-      <button>Submit</button>
+      <div className="next-back-container">
+        <Link to="/form/1">
+        <div className="form-navigation">Back</div>
+        </Link>
+
+        <div><button className="form-navigation">Submit</button></div>
+      </div>
     </div>
   )
 }

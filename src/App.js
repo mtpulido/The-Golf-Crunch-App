@@ -38,6 +38,7 @@ function App() {
           <ViewScores
             golfRound={golfRound}
             key={golfRound.id}
+            time={golfRound.createdTime}
           />
         ))}
       </Route> 

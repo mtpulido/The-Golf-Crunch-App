@@ -4,11 +4,13 @@ import { Link } from "react-router-dom"
 function Form1(props) {
 
   return (
-    <div className="form-info-container">
+    <div className="form-parent-container">
 
-        <p>Long Game</p>
+    <div className="form-longgame-container">
 
-        <div className="form-fairways-hit">
+        <p id="form-longgame-heading">Long Game</p>
+
+        <div id="form-fairways-hit">
           <label htmlFor="fairways"> Fairways Hit: </label>
           <input
             className="number-input"
@@ -21,8 +23,8 @@ function Form1(props) {
         </div>
         
 
-        <div className="form-fairways-possible">
-          <label htmlFor="fairways-possible"> Possible Fairways (no par 3s): </label>
+        <div id="form-fairways-possible">
+          <label htmlFor="fairways-possible"> Possible Fairways: </label>
           <input
             className="number-input"
             type="number"
@@ -33,8 +35,8 @@ function Form1(props) {
           />
         </div>
 
-        <div className="form-greens">
-          <label htmlFor="greens"> Greens in Regulation: </label>
+        <div id="form-greens">
+          <label htmlFor="greens"> Greens in Reg: </label>
           <input
             className="number-input"
             type="number"
@@ -44,16 +46,19 @@ function Form1(props) {
             onChange={(e) => props.setGreens(e.target.value)}
           />
       </div>
+      </div>
       
+      <div className="next-back-container">
       <Link to="/form">
-        <button>Back</button>
+      <div className="form-navigation">Back</div>
       </Link>
 
       <Link to="/form/2" >
-        <button>Next</button>
-      </Link>
+      <div className="form-navigation">Next</div>
+        </Link>
+      </div>
       
-    </div>
+      </div>
   )
 }
 

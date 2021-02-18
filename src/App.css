@@ -86,19 +86,16 @@ a {
 }
 
 
-.round-of-golf {
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
-}
-
 .number-input {
-  width: 30px;
+  width: 75px;
+  height: 20px;
+  text-align: center;
+  font-size: 15px;
 }
 
-.form-info-container {
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
-  padding-bottom: 10px;
+.text-input {
+  height: 20px;
+  font-size: 15px;
 }
 
 
@@ -331,5 +328,171 @@ a {
   filter: drop-shadow(1px 1px 1px #071524);
   background-color: #2b7ace;
   border-radius: 25px;
+  font-weight: 500;
+}
+
+
+
+.form-parent-container {
+  height: 100vh;
+}
+
+
+.form-info-container {  
+  display: grid;
+  grid-template-areas: 
+  "T T"
+  "P P"
+  "C C"
+  "S H"
+  ;
+  height: 300px;
+}
+
+#form-info-heading {
+  grid-area: T;
+  color: #e7e9ec;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+#form-info-player {
+  grid-area: P;
+  color: #e7e9ec;
+  font-size: 25px;
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+
+#form-info-course {
+  grid-area: C;
+  color: #e7e9ec;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+#form-info-score {
+  grid-area: S;
+  color: #e7e9ec;
+  font-size: 25px;
+  font-weight: 500;
+  padding-left: 50px;
+  padding-bottom: 10px;
+}
+
+#form-info-holes {
+  grid-area: H;
+  color: #e7e9ec;
+  font-size: 25px;
+  font-weight: 500;
+  padding-right: 50px;
+  padding-bottom: 10px;
+}
+
+
+
+.form-navigation {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e7e9ec;
+  font-size: 25px;
+  height: 35px;
+  width: 110px;
+  filter: drop-shadow(1px 1px 1px #071524);
+  background-color: #2b7ace;
+  border-radius: 25px;
+  font-weight: 500;
+}
+
+
+.form-longgame-container {
+  display: grid;
+  grid-template-areas: 
+  "T T"
+  "F F"
+  "P P"
+  "G G"
+  ;
+  height: 300px;
+}
+
+#form-longgame-heading {
+  grid-area: T;
+  color: #e7e9ec;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+
+#form-fairways-hit {
+  grid-area: F;
+  color: #e7e9ec;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+#form-fairways-possible {
+  grid-area: P;
+  color: #e7e9ec;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+#form-greens {
+  grid-area: G;
+  color: #e7e9ec;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.next-back-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 25px;
+}
+
+
+
+.form-shortgame-container {
+  display: grid;
+  grid-template-areas: 
+  "T T"
+  "P P"
+  "U U"
+  "D D"
+  ;
+  height: 300px;
+}
+
+#shorttgame-heading {
+  grid-area: T;
+  grid-area: T;
+  color: #e7e9ec;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+
+#form-putts {
+  grid-area: P;
+  color: #e7e9ec;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+#form-up-and-downs {
+  grid-area: U;
+  color: #e7e9ec;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+#form-possible-up-and-downs {
+  grid-area: D;
+  color: #e7e9ec;
+  font-size: 25px;
   font-weight: 500;
 }
