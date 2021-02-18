@@ -451,7 +451,7 @@ a {
 .next-back-container {
   display: flex;
   justify-content: space-around;
-  padding: 0 25px;
+  padding: 0 30px;
 }
 
 
@@ -494,5 +494,11 @@ a {
   grid-area: D;
   color: #e7e9ec;
   font-size: 25px;
+  font-weight: 500;
+}
+
+.form-alert {
+  color: #f74b4b;
+  font-size: 20px;
   font-weight: 500;
 }

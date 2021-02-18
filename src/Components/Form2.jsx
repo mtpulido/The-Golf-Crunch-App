@@ -2,6 +2,11 @@ import { useState } from "react"
 import { Link } from "react-router-dom"
 
 function Form2(props) {
+  const [alert, setAlert] = useState("")
+
+  const unfilledFields = () => {
+    setAlert("Fill All Input Fields")
+  }
 
   return (
 
@@ -17,7 +22,7 @@ function Form2(props) {
             className="number-input"
             type="number"
             id="putts"
-            placeholder="33..."
+            placeholder="...33"
             value={props.putts}
             onChange={(e) => props.setPutts(e.target.value)}
           />
@@ -30,7 +35,7 @@ function Form2(props) {
             className="number-input"
             type="number"
             id="up-and-downs"
-            placeholder="3..."
+            placeholder="...3"
             value={props.upAndDowns}
             onChange={(e) => props.setUpAndDowns(e.target.value)}
           />
@@ -42,7 +47,7 @@ function Form2(props) {
             className="number-input"
             type="number"
             id="possible-up-and-downs"
-            placeholder="8..."
+            placeholder="...8"
             value={props.possibleUpAndDowns}
             onChange={(e) => props.setPossibleUpAndDowns(e.target.value)}
           />
@@ -55,7 +60,7 @@ function Form2(props) {
         <div className="form-navigation">Back</div>
         </Link>
 
-        <div><button className="form-navigation">Submit</button></div>
+        <div><button type="submit" className="form-navigation">Submit</button></div>
       </div>
     </div>
   )

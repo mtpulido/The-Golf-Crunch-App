@@ -2,11 +2,16 @@ import { useState } from "react"
 import { Link } from "react-router-dom"
 
 function Form1(props) {
+  const [alert, setAlert] = useState("")
+
+  const unfilledFields = () => {
+    setAlert("Fill All Input Fields")
+  }
 
   return (
     <div className="form-parent-container">
 
-    <div className="form-longgame-container">
+      <div className="form-longgame-container">
 
         <p id="form-longgame-heading">Long Game</p>
 
@@ -16,12 +21,11 @@ function Form1(props) {
             className="number-input"
             type="number"
             id="fairways"
-            placeholder="8..."
+            placeholder="...8"
             value={props.fairwaysHit}
             onChange={(e) => props.setFairwaysHit(e.target.value)}
           />
         </div>
-        
 
         <div id="form-fairways-possible">
           <label htmlFor="fairways-possible"> Possible Fairways: </label>
@@ -29,7 +33,7 @@ function Form1(props) {
             className="number-input"
             type="number"
             id="fairways-possible"
-            placeholder="14..."
+            placeholder="...14"
             value={props.possibleFairways}
             onChange={(e) => props.setPossibleFairways(e.target.value)}
           />
@@ -41,24 +45,27 @@ function Form1(props) {
             className="number-input"
             type="number"
             id="greens"
-            placeholder="11..."
+            placeholder="...11"
             value={props.greens}
             onChange={(e) => props.setGreens(e.target.value)}
           />
-      </div>
-      </div>
-      
-      <div className="next-back-container">
-      <Link to="/form">
-      <div className="form-navigation">Back</div>
-      </Link>
+        </div>
 
-      <Link to="/form/2" >
-      <div className="form-navigation">Next</div>
-        </Link>
       </div>
       
+      <div className="form-alert">{alert}</div>
+
+      <div className="next-back-container">
+          <Link to="/form">
+          <div className="form-navigation">Back</div>
+          </Link>
+
+          {(props.fairwaysHit && props.possibleFairways && props.greens ?
+          <Link to="/form/2"><div className="form-navigation">Next</div></Link> :
+          <div className="form-navigation" onTouchStart={unfilledFields}>Next</div>)}
       </div>
+      
+    </div>
   )
 }
 
