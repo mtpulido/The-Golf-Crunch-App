@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-color: #0f2a49; 
+  background-color: #0f2a49;
 }
 
 a {
@@ -41,7 +41,7 @@ a {
   flex-direction: column;
   align-items: center;
   background-color: #0f2a49;
-
+  height: 100vh;
 }
 
 

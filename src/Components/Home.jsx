@@ -17,11 +17,6 @@ function Home() {
       </span>
       </Link>
 
-      <Link to="/mission">
-        <div className="mission-button">
-          <h2 className="button-text">Our Mission</h2>
-        </div>
-      </Link>
     </div>
   )
 }
