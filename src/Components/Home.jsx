@@ -5,16 +5,16 @@ function Home() {
   return (
     <div className="home-container">
 
-      <Link to="/form">
-      <div className="form-button"> 
-      <h2 className="button-text">Enter Round</h2>
-      </div>
-      </Link>
-
       <Link to="/scores">
         <div className="rounds-button">
           <h2 className="button-text">View Scores</h2>
         </div>
+      </Link>
+
+      <Link to="/form">
+      <span className="form-button"> 
+      <h2 className="button-text">Enter Round</h2>
+      </span>
       </Link>
 
       <Link to="/mission">

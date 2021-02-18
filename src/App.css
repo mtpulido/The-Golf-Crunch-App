@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: #0f2a49; 
 }
 
 a {
@@ -11,70 +12,77 @@ a {
 }
 
 .nav-bar {
-  height: 15%;
-  border: solid black 2px;
+  height: 90px;
+  border-bottom: solid #8794A4
+  2px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 20px;
-  margin-bottom: 20px;
+  padding: 0 10px;
+  background-color: #0f2a49;
+  color: #e7e9ec;
 }
 
 .home-button {
-  height: 75px;
+  height: 60px;
   width: 100%;
-  border: solid black 2px;
+  border: solid #2b7ace
+  2px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 30px;
   text-transform: none;
-  color: black;
+  color: #e7e9ec;
 }
 
 
 .home-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  background-color: #0f2a49;
+
 }
 
 
 .form-button {
-  height: 180px;
-  width: 180px;
+  height: 200px;
+  width: 200px;
   margin-top: 20px;
+  margin-bottom: 20px;
   background-image: url("http://www.pngall.com/wp-content/uploads/2016/03/Golf-Ball.png");
-  background-size: 180px;
+  background-size: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
-  filter: drop-shadow(1px 1px 2px  black);
+  filter: drop-shadow(1px 1px 2px  #071524);
 }
 
 .rounds-button {
-  height: 180px;
-  width: 180px;
-  margin-top: 20px;
+  height: 200px;
+  width: 200px;
+  margin-top: 40px;
+  margin-bottom: 20px;
   background-image: url("http://www.pngall.com/wp-content/uploads/2016/03/Golf-Ball.png");
-  background-size: 180px;
+  background-size: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
-  filter: drop-shadow(1px 1px 2px  black);
+  filter: drop-shadow(1px 1px 2px  #071524);
+  border-radius: 25px;
 }
 
 .mission-button {
-  height: 180px;
-  width: 180px;
+  height: 200px;
+  width: 200px;
   margin-top: 20px;
+  margin-bottom: 40px;
   background-image: url("http://www.pngall.com/wp-content/uploads/2016/03/Golf-Ball.png");
-  background-size: 180px;
+  background-size: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
-  filter: drop-shadow(1px 1px 2px  black);
+  filter: drop-shadow(1px 1px 2px  #071524);
 }
 
 
@@ -94,3 +102,234 @@ a {
 }
 
 
+.view-scores {
+  display: grid;
+  grid-template-areas:
+  "P P P P S S"
+  "P P P P S S"
+  "C C C C D D"
+  "C C C C D D";
+  border-bottom: solid #8794A4 1px;
+  height: 125px; 
+  padding-top: 25px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+#scores-player {
+  display: flex;
+  justify-content: left;
+  grid-area: P;
+  color: #e7e9ec;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+#scores-course {
+  display: flex;
+  justify-content: left;
+  grid-area: C;
+  color: #e7e9ec;  
+  font-size: 19px;
+  font-weight: 500;
+  width: 66vw;
+}
+
+#scores-score {
+  grid-area: S;
+  color: #e7e9ec;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+#scores-detail-button{
+  grid-area: D;
+  color: #e7e9ec;
+  font-size: 15px;
+  height: 30px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 100px;
+  filter: drop-shadow(1px 1px 1px #071524);
+  background-color: #2b7ace;
+  border-radius: 25px;
+  font-weight: 500;
+}
+
+
+
+.round-details {
+  height: 100vh;
+}
+
+.details-info {
+  display: grid;
+  grid-template-areas:
+  "D D D D D D"
+  "P P P P S S"
+  "P P P P S S"
+  "C C C C H H"
+  "C C C C H H";
+  border-bottom: solid #8794A4
+  1px;
+  height: 150px; 
+  padding-top: 5px;
+  margin: 10px 15px 0px 15px;
+}
+
+#details-date {
+  display: flex;
+  justify-content: left;
+  grid-area: D;
+  color: #e7e9ec;
+  font-size: 15px;
+}
+
+#details-player {
+  margin-top: 2px;
+  display: flex;
+  justify-content: left;
+  grid-area: P;
+  color: #e7e9ec;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+#details-course {
+  display: flex;
+  justify-content: left;
+  grid-area: C;
+  color: #e7e9ec;  
+  font-size: 19px;
+  font-weight: 500;
+  margin-top: 22px;
+  width: 70vw;
+}
+
+#details-score {
+  grid-area: S;
+  color: #e7e9ec;
+  font-size: 30px;
+  font-weight: bold;
+  border-bottom: solid #8794A4 1px;
+}
+
+#details-holes {
+  grid-area: H;
+  color: #e7e9ec;
+  font-weight: 500;
+  font-size: 19px;
+  margin-top: 22px;
+}
+
+
+
+.details-longgame {
+  display: grid;
+  grid-template-areas:
+  "L L F F F F"
+  "L L G G G G";
+  border-bottom: solid #8794A4 1px;
+  height: 115px; 
+  margin: 0 10px;
+}
+
+#details-longgame-label {
+  display: flex;
+  margin: 12px 5px 12px 0px;
+  width: 100px;
+  justify-content: flex-start;
+  align-items: center;
+  grid-area: L;
+  color: #e7e9ec;
+  font-size: 25px;
+  font-weight: 600;
+  border-right: solid #8794A4 1px;
+}
+
+#details-fairways {
+  grid-area: F;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  color: #e7e9ec;
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 12px;
+}
+
+#details-greens {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  grid-area: G;
+  color: #e7e9ec;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+
+
+.details-shortgame {
+  display: grid;
+  grid-template-areas:
+  "L L P P P P"
+  "L L U U U U";
+  border-bottom: solid #8794A4 1px;
+  height: 115px; 
+  margin: 0 10px;
+}
+
+#details-shortggame-label {
+  display: flex;
+  margin: 12px 5px 12px 0px;
+  width: 100px;
+  justify-content: flex-start;
+  align-items: center;
+  grid-area: L;
+  color: #e7e9ec;
+  font-size: 25px;
+  font-weight: 600;
+  border-right: solid #8794A4 1px;
+}
+
+#details-putts {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  grid-area: P;
+  color: #e7e9ec;
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 12px;
+}
+
+#details-up-and-downs {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  grid-area: U;
+  color: #e7e9ec;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.next-back-button {
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e7e9ec;
+  font-size: 25px;
+  height: 35px;
+  width: 110px;
+  filter: drop-shadow(1px 1px 1px #071524);
+  background-color: #2b7ace;
+  border-radius: 25px;
+  font-weight: 500;
+}

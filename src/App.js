@@ -3,7 +3,6 @@ import { Link, Route } from "react-router-dom"
 import Nav from "./Components/Nav"
 import Home from "./Components/Home"
 import ViewScores from "./Components/ViewScores"
-import Mission from "./Components/Mission"
 import { useState, useEffect } from "react"
 import { baseURL, config } from "./services"
 import axios from 'axios';
@@ -31,32 +30,27 @@ function App() {
       
     <Route exact path="/">
       <Home />
-    </Route>
+      </Route>
+      
 
-    <Route path="/form">
-        <ParentForm setToggleFetch={setToggleFetch}/>
-    </Route>
-
-    
-    <Route exact path="/scores">
-        <h2>Rounds</h2>
+      <Route exact path="/scores">
         {golfRounds.map((golfRound) => (
           <ViewScores
             golfRound={golfRound}
             key={golfRound.id}
           />
         ))}
-    </Route>  
+      </Route> 
+      
+
+    <Route path="/form">
+        <ParentForm setToggleFetch={setToggleFetch}/>
+      </Route>
       
       
     <Route path="/scores/:id">
         <ViewDetails golfRounds={golfRounds}/>
     </Route>
-
-
-    <Route path="/mission">
-        <Mission />
-    </Route>  
     </div>
   );
 }
