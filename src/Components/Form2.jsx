@@ -18,7 +18,7 @@ function Form2(props) {
 
     <div className="form-shortgame-container">
 
-        <p id="shorttgame-heading">Short Game</p>
+        <div id="shorttgame-heading">Short Game</div>
 
         <div id="form-putts">
           <label htmlFor="putts"> Putts: </label>

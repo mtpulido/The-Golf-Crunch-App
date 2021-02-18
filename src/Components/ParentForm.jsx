@@ -5,6 +5,7 @@ import { Route } from "react-router-dom"
 import Form from "./Form"
 import Form1 from "./Form1"
 import Form2 from "./Form2"
+import {useHistory} from "react-router-dom"
 
 function ParentForm(props) {
   const [player, setPlayer] = useState("")
@@ -19,6 +20,7 @@ function ParentForm(props) {
   const [putts, setPutts] = useState("")
   const [upAndDowns, setUpAndDowns] = useState("")
   const [possibleUpAndDowns, setPossibleUpAndDowns] = useState("")
+  const history = useHistory()
 
 
   
@@ -40,7 +42,7 @@ function ParentForm(props) {
 
     await axios.post(baseURL, { fields }, config)
     props.setToggleFetch((curr) => !curr)
-
+    history.push("/")
   }
 
 

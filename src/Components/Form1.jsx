@@ -17,7 +17,7 @@ function Form1(props) {
 
       <div className="form-longgame-container">
 
-        <p id="form-longgame-heading">Long Game</p>
+        <div id="form-longgame-heading">Long Game</div>
 
         <div id="form-fairways-hit">
           <label htmlFor="fairways"> Fairways Hit: </label>

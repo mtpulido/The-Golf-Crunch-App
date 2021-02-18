@@ -19,7 +19,7 @@ function Form(props) {
       
     <div className="form-info-container">
 
-      <p id="form-info-heading">Round Info</p>
+      <div id="form-info-heading">Round Info</div>
       
       <div id="form-info-player">
           <label htmlFor="player"> Player Name: </label>
