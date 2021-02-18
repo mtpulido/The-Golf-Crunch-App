@@ -18,14 +18,14 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 10px;
+  padding: 0 15px;
   background-color: #0f2a49;
   color: #e7e9ec;
 }
 
 .home-button {
   height: 60px;
-  width: 100%;
+  width: 75px;
   border: solid #2b7ace
   2px;
   display: flex;
