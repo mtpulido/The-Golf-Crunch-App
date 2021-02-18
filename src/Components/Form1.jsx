@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { Link } from "react-router-dom"
 
 function Form1(props) {
@@ -7,6 +7,10 @@ function Form1(props) {
   const unfilledFields = () => {
     setAlert("Fill All Input Fields")
   }
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
   return (
     <div className="form-parent-container">
@@ -60,9 +64,12 @@ function Form1(props) {
           <div className="form-navigation">Back</div>
           </Link>
 
-          {(props.fairwaysHit && props.possibleFairways && props.greens ?
+        {(props.fairwaysHit && props.possibleFairways && props.greens ?
+          
           <Link to="/form/2"><div className="form-navigation">Next</div></Link> :
+
           <div className="form-navigation" onTouchStart={unfilledFields}>Next</div>)}
+        
       </div>
       
     </div>

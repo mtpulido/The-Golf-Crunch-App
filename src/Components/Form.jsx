@@ -1,12 +1,17 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 
 function Form(props) {
   const [alert, setAlert] = useState("")
 
   const unfilledFields = () => {
-    setAlert("Fill All Input Fields")
+    setAlert("All Fields Required")
   }
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
 
   return (
 
@@ -64,11 +69,15 @@ function Form(props) {
         
     </div>
       
-    <div className="form-alert">{alert}</div>
+      <div className="form-alert">{alert}</div>
+      
+    
+    <div className="first-form-next-container">
 
     {(props.player && props.score && props.course && props.holes ?
     <Link to="/form/1"><div className="form-navigation">Next</div></Link> :
-    <div className="form-navigation" onTouchStart={unfilledFields}>Next</div>)}
+          <div className="form-navigation" onTouchStart={unfilledFields}>Next</div>)}
+    </div>
       
   </div>
   )

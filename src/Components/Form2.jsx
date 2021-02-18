@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { Link } from "react-router-dom"
 
 function Form2(props) {
@@ -7,6 +7,10 @@ function Form2(props) {
   const unfilledFields = () => {
     setAlert("Fill All Input Fields")
   }
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
   return (
 
@@ -60,7 +64,7 @@ function Form2(props) {
         <div className="form-navigation">Back</div>
         </Link>
 
-        <div><button type="submit" className="form-navigation">Submit</button></div>
+        <div><button type="submit" className="form-navigation" disabled={!props.possibleUpAndDowns && !props.upAndDowns && !props.putts}>Submit</button></div>
       </div>
     </div>
   )

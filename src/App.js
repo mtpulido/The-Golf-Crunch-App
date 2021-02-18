@@ -20,6 +20,7 @@ function App() {
       setGolfRounds(response.data.records)
     }
     getGolfData()
+    
   }, [toggleFetch])
 
   return (

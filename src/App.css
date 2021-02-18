@@ -393,7 +393,7 @@ a {
 
 
 .form-navigation {
-  margin: 0 auto;
+  /* margin: 0 auto; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -452,6 +452,11 @@ a {
   display: flex;
   justify-content: space-around;
   padding: 0 30px;
+}
+
+.first-form-next-container {
+  display: flex;
+  justify-content: center;
 }
 
 
