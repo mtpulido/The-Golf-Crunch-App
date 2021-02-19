@@ -76,7 +76,7 @@ function Form(props) {
 
     {(props.player && props.score && props.course && props.holes ?
     <Link to="/form/1"><div className="form-navigation">Next</div></Link> :
-          <div className="form-navigation" onTouchStart={unfilledFields}>Next</div>)}
+          <div className="form-navigation" onTouchStart={unfilledFields} onClick={unfilledFields}>Next</div>)}
     </div>
       
   </div>

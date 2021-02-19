@@ -66,7 +66,7 @@ function Form1(props) {
 
         {(props.fairwaysHit && props.possibleFairways && props.greens ?
           <Link to="/form/2"><div className="form-navigation">Next</div></Link> :
-          <div className="form-navigation" onTouchStart={unfilledFields}>Next</div>)}
+          <div className="form-navigation" onTouchStart={unfilledFields} onClick={unfilledFields}>Next</div>)}
         
       </div>
       
