@@ -4,14 +4,15 @@
 //these might have to be sent as props or else i'll have to do all of this in the handleSubmit function. 
 //need to useState for this
 
-const analyzeGolf = ({ fields }) => {
+const analyzeGolf = (fields) => {
+const [playerName, setPlayerName] = useState("")
 const [analysisScore, setAnalysisScore] = useState("")
 const [analysisFairways, setAnalysisFairways] = useState("")
 const [analysisGreens, setAnalysisGreens] = useState("")
 const [analysisChipping, setAnalysisChipping] = useState("")
 const [analysisPutting, setAnalysisPutting] = useState("")
 
-const { score, holes, fairwaysHit, possibleFairways, greens, putts, upAndDowns, possibleUpAndDowns } = fields
+const { player, score, holes, fairwaysHit, possibleFairways, greens, putts, upAndDowns, possibleUpAndDowns } = fields
   
   if (score > holes * 6.62) {
     setAnalysisScore("something")
