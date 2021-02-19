@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   background-color: #0f2a49;
+  max-width: 650px;
 }
 
 a {
