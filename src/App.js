@@ -20,7 +20,7 @@ function App() {
       setGolfRounds(response.data.records)
     }
     getGolfData()
-    
+
   }, [toggleFetch])
 
   return (
@@ -38,7 +38,7 @@ function App() {
         {golfRounds.map((golfRound) => (
           <ViewScores
             golfRound={golfRound}
-            key={golfRound.id}
+            key={golfRound.createdTime}
             time={golfRound.createdTime}
           />
         ))}
