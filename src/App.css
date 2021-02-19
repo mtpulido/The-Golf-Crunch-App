@@ -144,12 +144,10 @@ a {
   color: #e7e9ec;
   font-size: 15px;
   height: 30px;
-  width: 100px;
+  min-width: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 30px;
-  width: 100px;
   filter: drop-shadow(1px 1px 1px #071524);
   background-color: #2b7ace;
   border-radius: 25px;
@@ -164,6 +162,7 @@ a {
 
 .details-info {
   display: grid;
+  justify-content: space-around;
   grid-template-areas:
   "D D D D D D"
   "P P P P S S"
@@ -226,17 +225,19 @@ a {
 
 .details-longgame {
   display: grid;
+  justify-content: space-around;
   grid-template-areas:
   "L L F F F F"
   "L L G G G G";
   border-bottom: solid #8794A4 1px;
   height: 115px; 
-  margin: 0 10px;
+  margin: 10px 15px 0px 15px;
 }
 
 #details-longgame-label {
   display: flex;
   margin: 12px 5px 12px 0px;
+  padding-right: 11px;
   width: 100px;
   justify-content: flex-start;
   align-items: center;
@@ -273,17 +274,19 @@ a {
 
 .details-shortgame {
   display: grid;
+  justify-content: space-around;
   grid-template-areas:
   "L L P P P P"
   "L L U U U U";
   border-bottom: solid #8794A4 1px;
   height: 115px; 
-  margin: 0 10px;
+  margin: 10px 15px 0px 15px;
 }
 
 #details-shortggame-label {
   display: flex;
   margin: 12px 5px 12px 0px;
+  padding-right: 10px;
   width: 100px;
   justify-content: flex-start;
   align-items: center;
