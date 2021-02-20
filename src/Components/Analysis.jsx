@@ -42,48 +42,46 @@ const Analysis = (props) => {
     } else if (score <= 77) {
       setAnalysisScore(" Great round 👊. You scored in the 90th percentile.");
     } else if (score <= 79) {
-      setAnalysisScore(" Nice round 💪. You scored in the 83rd percentile.");
+      setAnalysisScore(" Nice round 💪. You scored in the 85th percentile.");
     } else if (score <= 81) {
       setAnalysisScore(
-        " Really good round ✊. You scored in the 75th percentile."
+        " Really good round ✊. You scored in the 80th percentile."
       );
     } else if (score == 82) {
       setAnalysisScore(
-        " Really good round ✊. You scored in the 70th percentile."
+        " Really good round ✊. You scored in the 77th percentile."
       );
     } else if (score == 83) {
-      setAnalysisScore("Good round 👍. You scored in the 65th percentile.");
+      setAnalysisScore("Good round 👍. You scored in the 74th percentile.");
     } else if (score == 84) {
-      setAnalysisScore("Good round 👍. You scored in the 60th percentile.");
+      setAnalysisScore("Good round 👍. You scored in the 70th percentile.");
     } else if (score == 85) {
-      setAnalysisScore("Good round 👍. You scored in the 55th percentile.");
+      setAnalysisScore("Good round 👍. You scored in the 65th percentile.");
     } else if (score == 86) {
-      setAnalysisScore("Decent round 😀. You scored in the 50th percentile.");
+      setAnalysisScore("Decent round 😀. You scored in the 60th percentile.");
     } else if (score == 87) {
-      setAnalysisScore("Decent round 😀. You scored in the 45th percentile.");
+      setAnalysisScore("Decent round 😀. You scored in the 56th percentile.");
     } else if (score == 88) {
-      setAnalysisScore("Decent round 😀. You scored in the 40th percentile.");
+      setAnalysisScore("Decent round 😀. You scored in the 52nd percentile.");
     } else if (score == 89) {
-      setAnalysisScore("Decent round 😀. You scored in the 35th percentile.");
+      setAnalysisScore("Decent round 😀. You scored in the 50th percentile.");
     } else if (score == 90) {
-      setAnalysisScore("Ok round 😐. You scored in the 30th percentile.");
+      setAnalysisScore("Ok round 😐. You scored in the 47th percentile.");
     } else if (score == 91) {
-      setAnalysisScore("Ok round 😐. You scored in the 25th percentile.");
-    } else if (score == 91) {
+      setAnalysisScore("Ok round 😐. You scored in the 43rd percentile.");
+    } else if (score == 92) {
+      setAnalysisScore("Mediocre round 😕. You scored in the 38th percentile.");
+    } else if (score == 93) {
+      setAnalysisScore("Mediocre round 😕. You scored in the 33rd percentile.");
+    } else if (score <= 95) {
       setAnalysisScore("Mediocre round 😕. You scored in the 25th percentile.");
-    } else if (score <= 93) {
-      setAnalysisScore("Mediocre round 😕. You scored in the 19th percentile.");
-    } else if (score <= 95) {
-      setAnalysisScore("Mediocre round 😕. You scored in the 13th percentile.");
-    } else if (score <= 95) {
-      setAnalysisScore("Mediocre round 😕. You scored in the 13th percentile.");
-    } else if (score <= 97) {
-      setAnalysisScore("Bad round 😫. You scored in the 10th percentile.");
+    }  else if (score <= 97) {
+      setAnalysisScore("Bad round 😫. You scored in the 20th percentile.");
     } else if (score <= 99) {
-      setAnalysisScore("Bad round 😫. You scored in the 7th percentile.");
+      setAnalysisScore("Bad round 😫. You scored in the 15th percentile.");
     } else {
       setAnalysisScore(
-        "You have a lot of work to do. You scored in the 5th percentile or lower."
+        "🤮 You have a lot of work to do. You scored in the 10th percentile or lower."
       );
     }
 
@@ -116,14 +114,14 @@ const Analysis = (props) => {
     } else if (greens / holes < 0.24) {
       setAnalysisGreens("Not good. You need to work on your iron game.");
     } else if (greens / holes < 0.35) {
-      setAnalysisGreens("You're average, keep working on your irons.");
+      setAnalysisGreens("You're average at hitting the green, keep working on your irons.");
     } else if (greens / holes < 0.46) {
       setAnalysisGreens(
         "Decent work, try to find a bit more consistency with your irons."
       );
     } else if (greens / holes < 0.57) {
       setAnalysisGreens(
-        "Good work, you're on your way to being a great iron player."
+        "Good work, you're on your way to being a great iron player with a bit more practice."
       );
     } else if (greens / holes < 0.68) {
       setAnalysisGreens("Great work, you have a really nice iron game.");
@@ -195,7 +193,7 @@ const Analysis = (props) => {
       );
     } else if (upAndDowns / possibleUpAndDowns < 0.57) {
       setAnalysisChipping(
-        "You're a good chipper. Try to become a great chipper."
+        "You're a good chipper. Practice a bit more to become a great chipper."
       );
     } else if (upAndDowns / possibleUpAndDowns < 0.64) {
       setAnalysisChipping("You're a really good chipper. Nice work!");
