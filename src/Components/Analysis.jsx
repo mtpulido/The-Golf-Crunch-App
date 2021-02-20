@@ -158,17 +158,23 @@ const [analysisPutting, setAnalysisPutting] = useState("")
     <div className="analysis-container">
       
       <div className="analysis-round-info">
-        <div id="analysis-player">{player}'s Round Analysis</div>
+        <div id="analysis-player">{player}'s Analysis</div>
         <div id="analysis-course">{course}</div>
         <div id="analysis-date">{dateFormat}</div>
         <div id="analysis-score">{analysisScore}</div> 
       </div> 
 
-      <div className="analysis-fairways">{analysisFairways}</div> 
-      <div className="analysis-greens">{analysisGreens}</div>
-      <div className="analysis-putts">{analysisPutting}</div>
-      <div className="analysis-putts">{analysisChipping}</div>  
+      <div className="analysis-categories">
+      <div id="analysis-driving-label">Driver</div>
+      <div id="analysis-irons-label">Irons</div>
+      <div id="analysis-chipping-label">Short Game</div>
+      <div id="analysis-puting-label">Putter</div>
 
+      <div id="analysis-fairways">{analysisFairways}</div> 
+      <div id="analysis-greens">{analysisGreens}</div>
+      <div id="analysis-putts">{analysisPutting}</div>
+      <div id="analysis-chips">{analysisChipping}</div>  
+      </div>
   </div>
 )
 }

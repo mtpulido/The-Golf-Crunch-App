@@ -517,15 +517,160 @@ a {
   display: grid;
   grid-template-areas: 
   "N N"
-  "D C"
+  "C D"
   "S S"
   ;
+  border-bottom: solid #8794A4 2px;
+  margin: 0 10px;
 }
 
 #analysis-player {
   grid-area: N;
+  color: #e7e9ec;
+  font-size: 25px;
+  font-weight: 600;
+  margin-top: 25px;
 }
 
 #analysis-course {
   grid-area: C;
+  color: #e7e9ec;  
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+#analysis-date {
+  grid-area: D;
+  color: #e7e9ec;  
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+#analysis-score {
+  grid-area: S;
+  color: #e7e9ec;
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+
+.analysis-categories {
+  display: grid;
+  grid-template-areas:
+  "D F F"
+  "I G G"
+  "C S S"
+  "P X X"
+  ;
+  border-bottom: solid #8794A4 2px;
+  margin: 0 10px;
+}
+
+#analysis-driving-label {
+  grid-area: D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #e7e9ec;
+  font-size: 25px;
+  font-weight: 600;
+  border-right: solid #8794A4 1px;
+  border-bottom: solid #8794A4 1px;
+  height: 100px;
+}
+#analysis-fairways {
+  grid-area: F;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: #e7e9ec;
+  font-size: 20px;
+  font-weight: 500;
+  border-bottom: solid #8794A4 1px;
+  height: 100px;
+  padding-left: 20px;
+}
+
+
+#analysis-irons-label {
+  grid-area: I;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #e7e9ec;
+  font-size: 25px;
+  font-weight: 600;
+  border-right: solid #8794A4 1px;
+  border-bottom: solid #8794A4 1px;
+  height: 100px;
+}
+#analysis-greens {
+  grid-area: G;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: #e7e9ec;
+  font-size: 20px;
+  font-weight: 500;
+  border-bottom: solid #8794A4 1px;
+  height: 100px;
+  padding-left: 20px;
+}
+
+
+#analysis-chipping-label {
+  grid-area: C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #e7e9ec;
+  font-size: 25px;
+  font-weight: 600;
+  border-right: solid #8794A4 1px;
+  border-bottom: solid #8794A4 1px;
+  height: 100px;
+}
+#analysis-chips {
+  grid-area: S;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: #e7e9ec;
+  font-size: 20px;
+  font-weight: 500;
+  border-bottom: solid #8794A4 1px;
+  height: 100px;
+  padding-left: 20px;
+}
+
+
+#analysis-puting-label {
+  grid-area: P;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #e7e9ec;
+  font-size: 25px;
+  font-weight: 600;
+  border-right: solid #8794A4 1px;
+  height: 100px;
+}
+#analysis-putts {
+  grid-area: X;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: #e7e9ec;
+  font-size: 20px;
+  font-weight: 500;
+  height: 100px;
+  padding-left: 20px;
+}
+
+.analysis-container {
+  height: 1000px;
 }
