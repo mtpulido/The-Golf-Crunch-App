@@ -14,8 +14,7 @@ a {
 
 .nav-bar {
   height: 90px;
-  border-bottom: solid #8794A4
-  2px;
+  border-bottom: solid #8794a4 2px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -27,15 +26,13 @@ a {
 .home-button {
   height: 60px;
   width: 75px;
-  border: solid #2b7ace
-  2px;
+  border: solid #2b7ace 2px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-transform: none;
   color: #e7e9ec;
 }
-
 
 .home-container {
   display: flex;
@@ -44,7 +41,6 @@ a {
   background-color: #0f2a49;
   height: 100vh;
 }
-
 
 .form-button {
   height: 200px;
@@ -56,7 +52,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  filter: drop-shadow(1px 1px 2px  #071524);
+  filter: drop-shadow(1px 1px 2px #071524);
 }
 
 .rounds-button {
@@ -69,7 +65,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  filter: drop-shadow(1px 1px 2px  #071524);
+  filter: drop-shadow(1px 1px 2px #071524);
   border-radius: 25px;
 }
 
@@ -83,9 +79,8 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  filter: drop-shadow(1px 1px 2px  #071524);
+  filter: drop-shadow(1px 1px 2px #071524);
 }
-
 
 .number-input {
   width: 45px;
@@ -99,16 +94,15 @@ a {
   font-size: 15px;
 }
 
-
 .view-scores {
   display: grid;
   grid-template-areas:
-  "P P P P S S"
-  "P P P P S S"
-  "C C C C D D"
-  "C C C C D D";
-  border-bottom: solid #8794A4 1px;
-  height: 125px; 
+    "P P P P S S"
+    "P P P P S S"
+    "C C C C D D"
+    "C C C C D D";
+  border-bottom: solid #8794a4 1px;
+  height: 125px;
   padding-top: 25px;
   padding-right: 15px;
   padding-left: 15px;
@@ -128,7 +122,7 @@ a {
   display: flex;
   justify-content: left;
   grid-area: C;
-  color: #e7e9ec;  
+  color: #e7e9ec;
   font-size: 19px;
   font-weight: 500;
   width: 66vw;
@@ -142,7 +136,7 @@ a {
   font-weight: bold;
 }
 
-#scores-detail-button{
+#scores-detail-button {
   grid-area: D;
   color: #e7e9ec;
   font-size: 15px;
@@ -158,8 +152,6 @@ a {
   max-width: 650px;
 }
 
-
-
 .round-details {
   height: 100vh;
 }
@@ -168,14 +160,13 @@ a {
   display: grid;
   justify-content: space-around;
   grid-template-areas:
-  "D D D D D D"
-  "P P P P S S"
-  "P P P P S S"
-  "C C C C H H"
-  "C C C C H H";
-  border-bottom: solid #8794A4
-  1px;
-  height: 150px; 
+    "D D D D D D"
+    "P P P P S S"
+    "P P P P S S"
+    "C C C C H H"
+    "C C C C H H";
+  border-bottom: solid #8794a4 1px;
+  height: 150px;
   padding-top: 5px;
   margin: 10px 15px 0px 15px;
 }
@@ -202,7 +193,7 @@ a {
   display: flex;
   justify-content: left;
   grid-area: C;
-  color: #e7e9ec;  
+  color: #e7e9ec;
   font-size: 19px;
   font-weight: 500;
   margin-top: 22px;
@@ -215,7 +206,7 @@ a {
   color: #e7e9ec;
   font-size: 30px;
   font-weight: bold;
-  border-bottom: solid #8794A4 1px;
+  border-bottom: solid #8794a4 1px;
 }
 
 #details-holes {
@@ -226,16 +217,14 @@ a {
   margin-top: 22px;
 }
 
-
-
 .details-longgame {
   display: grid;
   justify-content: space-around;
   grid-template-areas:
-  "L L F F F F"
-  "L L G G G G";
-  border-bottom: solid #8794A4 1px;
-  height: 115px; 
+    "L L F F F F"
+    "L L G G G G";
+  border-bottom: solid #8794a4 1px;
+  height: 115px;
   margin: 10px 15px 0px 15px;
 }
 
@@ -250,7 +239,7 @@ a {
   color: #e7e9ec;
   font-size: 25px;
   font-weight: 600;
-  border-right: solid #8794A4 1px;
+  border-right: solid #8794a4 1px;
 }
 
 #details-fairways {
@@ -275,16 +264,14 @@ a {
   margin-bottom: 12px;
 }
 
-
-
 .details-shortgame {
   display: grid;
   justify-content: space-around;
   grid-template-areas:
-  "L L P P P P"
-  "L L U U U U";
-  border-bottom: solid #8794A4 1px;
-  height: 115px; 
+    "L L P P P P"
+    "L L U U U U";
+  border-bottom: solid #8794a4 1px;
+  height: 115px;
   margin: 10px 15px 0px 15px;
 }
 
@@ -299,7 +286,7 @@ a {
   color: #e7e9ec;
   font-size: 25px;
   font-weight: 600;
-  border-right: solid #8794A4 1px;
+  border-right: solid #8794a4 1px;
 }
 
 #details-putts {
@@ -339,21 +326,17 @@ a {
   font-weight: 500;
 }
 
-
-
 .form-parent-container {
   height: 100vh;
 }
 
-
-.form-info-container {  
+.form-info-container {
   display: grid;
-  grid-template-areas: 
-  "T T"
-  "P P"
-  "C C"
-  "S H"
-  ;
+  grid-template-areas:
+    "T T"
+    "P P"
+    "C C"
+    "S H";
   height: 300px;
 }
 
@@ -395,8 +378,6 @@ a {
   padding-right: 50px;
 }
 
-
-
 .form-navigation {
   display: flex;
   align-items: center;
@@ -411,15 +392,13 @@ a {
   font-weight: 500;
 }
 
-
 .form-longgame-container {
   display: grid;
-  grid-template-areas: 
-  "T T"
-  "F F"
-  "P P"
-  "G G"
-  ;
+  grid-template-areas:
+    "T T"
+    "F F"
+    "P P"
+    "G G";
   height: 300px;
 }
 
@@ -463,16 +442,13 @@ a {
   justify-content: center;
 }
 
-
-
 .form-shortgame-container {
   display: grid;
-  grid-template-areas: 
-  "T T"
-  "P P"
-  "U U"
-  "D D"
-  ;
+  grid-template-areas:
+    "T T"
+    "P P"
+    "U U"
+    "D D";
   height: 300px;
 }
 
@@ -512,15 +488,13 @@ a {
   font-weight: 500;
 }
 
-
 .analysis-round-info {
   display: grid;
-  grid-template-areas: 
-  "N N"
-  "C D"
-  "S S"
-  ;
-  border-bottom: solid #8794A4 2px;
+  grid-template-areas:
+    "N N"
+    "C D"
+    "S S";
+  border-bottom: solid #8794a4 2px;
   margin: 0 10px;
 }
 
@@ -534,7 +508,7 @@ a {
 
 #analysis-course {
   grid-area: C;
-  color: #e7e9ec;  
+  color: #e7e9ec;
   font-size: 15px;
   font-weight: 500;
   margin-top: 20px;
@@ -542,7 +516,7 @@ a {
 
 #analysis-date {
   grid-area: D;
-  color: #e7e9ec;  
+  color: #e7e9ec;
   font-size: 15px;
   font-weight: 500;
   margin-top: 20px;
@@ -557,16 +531,14 @@ a {
   margin-bottom: 25px;
 }
 
-
 .analysis-categories {
   display: grid;
   grid-template-areas:
-  "D F F"
-  "I G G"
-  "C S S"
-  "P X X"
-  ;
-  border-bottom: solid #8794A4 2px;
+    "D F F"
+    "I G G"
+    "C S S"
+    "P X X";
+  border-bottom: solid #8794a4 2px;
   margin: 0 10px;
 }
 
@@ -578,8 +550,8 @@ a {
   color: #e7e9ec;
   font-size: 25px;
   font-weight: 600;
-  border-right: solid #8794A4 1px;
-  border-bottom: solid #8794A4 1px;
+  border-right: solid #8794a4 1px;
+  border-bottom: solid #8794a4 1px;
   height: 100px;
 }
 #analysis-fairways {
@@ -590,11 +562,10 @@ a {
   color: #e7e9ec;
   font-size: 20px;
   font-weight: 500;
-  border-bottom: solid #8794A4 1px;
+  border-bottom: solid #8794a4 1px;
   height: 100px;
   padding-left: 20px;
 }
-
 
 #analysis-irons-label {
   grid-area: I;
@@ -604,8 +575,8 @@ a {
   color: #e7e9ec;
   font-size: 25px;
   font-weight: 600;
-  border-right: solid #8794A4 1px;
-  border-bottom: solid #8794A4 1px;
+  border-right: solid #8794a4 1px;
+  border-bottom: solid #8794a4 1px;
   height: 100px;
 }
 #analysis-greens {
@@ -616,11 +587,10 @@ a {
   color: #e7e9ec;
   font-size: 20px;
   font-weight: 500;
-  border-bottom: solid #8794A4 1px;
+  border-bottom: solid #8794a4 1px;
   height: 100px;
   padding-left: 20px;
 }
-
 
 #analysis-chipping-label {
   grid-area: C;
@@ -630,8 +600,8 @@ a {
   color: #e7e9ec;
   font-size: 25px;
   font-weight: 600;
-  border-right: solid #8794A4 1px;
-  border-bottom: solid #8794A4 1px;
+  border-right: solid #8794a4 1px;
+  border-bottom: solid #8794a4 1px;
   height: 100px;
 }
 #analysis-chips {
@@ -642,11 +612,10 @@ a {
   color: #e7e9ec;
   font-size: 20px;
   font-weight: 500;
-  border-bottom: solid #8794A4 1px;
+  border-bottom: solid #8794a4 1px;
   height: 100px;
   padding-left: 20px;
 }
-
 
 #analysis-puting-label {
   grid-area: P;
@@ -656,7 +625,7 @@ a {
   color: #e7e9ec;
   font-size: 25px;
   font-weight: 600;
-  border-right: solid #8794A4 1px;
+  border-right: solid #8794a4 1px;
   height: 100px;
 }
 #analysis-putts {
@@ -674,10 +643,6 @@ a {
 .analysis-container {
   height: 1000px;
 }
-
-
-
-
 .loading-container {
   display: flex;
   flex-direction: column;
@@ -693,7 +658,7 @@ a {
   margin-top: 20px;
 }
 
- /* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_loader */
+/* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_loader */
 .loading-animation {
   border: 16px solid #f3f3f3;
   border-radius: 50%;
@@ -706,11 +671,19 @@ a {
 
 /* Safari */
 @-webkit-keyframes spin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

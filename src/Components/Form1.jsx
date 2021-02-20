@@ -1,22 +1,20 @@
-import { useState, useEffect } from "react"
-import { Link } from "react-router-dom"
+import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 function Form1(props) {
-  const [alert, setAlert] = useState("")
+  const [alert, setAlert] = useState("");
 
   const unfilledFields = () => {
-    setAlert("Fill All Input Fields")
-  }
+    setAlert("Fill All Input Fields");
+  };
 
   useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="form-parent-container">
-
       <div className="form-longgame-container">
-
         <div id="form-longgame-heading">Long Game</div>
 
         <div id="form-fairways-hit">
@@ -54,24 +52,31 @@ function Form1(props) {
             onChange={(e) => props.setGreens(e.target.value)}
           />
         </div>
-
       </div>
-      
+
       <div className="form-alert">{alert}</div>
 
       <div className="next-back-container">
-          <Link to="/form">
+        <Link to="/form">
           <div className="form-navigation">Back</div>
-          </Link>
+        </Link>
 
-        {(props.fairwaysHit && props.possibleFairways && props.greens ?
-          <Link to="/form/2"><div className="form-navigation">Next</div></Link> :
-          <div className="form-navigation" onTouchStart={unfilledFields} onClick={unfilledFields}>Next</div>)}
-        
+        {props.fairwaysHit && props.possibleFairways && props.greens ? (
+          <Link to="/form/2">
+            <div className="form-navigation">Next</div>
+          </Link>
+        ) : (
+          <div
+            className="form-navigation"
+            onTouchStart={unfilledFields}
+            onClick={unfilledFields}
+          >
+            Next
+          </div>
+        )}
       </div>
-      
     </div>
-  )
+  );
 }
 
-export default Form1
+export default Form1;

@@ -1,23 +1,20 @@
-import { useState, useEffect } from "react"
-import { Link } from "react-router-dom"
+import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 function Form2(props) {
-  const [alert, setAlert] = useState("")
+  const [alert, setAlert] = useState("");
 
   const unfilledFields = () => {
-    setAlert("Fill All Input Fields")
-  }
+    setAlert("Fill All Input Fields");
+  };
 
   useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
-
     <div className="form-parent-container">
-
-    <div className="form-shortgame-container">
-
+      <div className="form-shortgame-container">
         <div id="shorttgame-heading">Short Game</div>
 
         <div id="form-putts">
@@ -31,7 +28,6 @@ function Form2(props) {
             onChange={(e) => props.setPutts(e.target.value)}
           />
         </div>
-        
 
         <div id="form-up-and-downs">
           <label htmlFor="up-and-downs">Up & Downs &lt; 30 yards: </label>
@@ -55,18 +51,27 @@ function Form2(props) {
             value={props.possibleUpAndDowns}
             onChange={(e) => props.setPossibleUpAndDowns(e.target.value)}
           />
+        </div>
       </div>
-      </div>
-      
 
       <div className="next-back-container">
         <Link to="/form/1">
-        <div className="form-navigation">Back</div>
+          <div className="form-navigation">Back</div>
         </Link>
 
-        <div><button type="submit" className="form-navigation" disabled={!props.possibleUpAndDowns && !props.upAndDowns && !props.putts}>Submit</button></div>
+        <div>
+          <button
+            type="submit"
+            className="form-navigation"
+            disabled={
+              !props.possibleUpAndDowns && !props.upAndDowns && !props.putts
+            }
+          >
+            Submit
+          </button>
+        </div>
       </div>
     </div>
-  )
+  );
 }
-export default Form2
+export default Form2;

@@ -1,8 +1,6 @@
 import { useState, useEffect } from "react";
 
 const Analysis = (props) => {
-  // look in to setTimeOut for loading animation
-
   const [analysisScore, setAnalysisScore] = useState("");
   const [analysisFairways, setAnalysisFairways] = useState("");
   const [analysisGreens, setAnalysisGreens] = useState("");
@@ -28,7 +26,7 @@ const Analysis = (props) => {
   let dateFormat = `${dateString.slice(4, 15)}`;
 
   useEffect(() => {
-    window.scrollTo(0, 0)
+    window.scrollTo(0, 0);
     setTimeout(() => {
       setLoading(false);
     }, 3000);
@@ -209,8 +207,6 @@ const Analysis = (props) => {
       setAnalysisChipping("Your chipping is PGA tour caliber.");
     }
   }, [loading]);
-
-
 
   //https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_loader for loading animation CSS.
   return (
