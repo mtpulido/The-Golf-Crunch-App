@@ -8,7 +8,6 @@ import { baseURL, config } from "./services"
 import axios from 'axios';
 import ViewDetails from "./Components/ViewDetails"
 import ParentForm from "./Components/ParentForm"
-// import Analysis from "./Components/Analysis"
 
 
 function App() {
@@ -54,10 +53,6 @@ function App() {
     <Route path="/scores/:id">
         <ViewDetails golfRounds={golfRounds}/>
       </Route>
-      
-      {/* <Route path="/form/analysis">
-        <Analysis />
-      </Route> */}
     </div>
   );
 }

@@ -88,7 +88,7 @@ a {
 
 
 .number-input {
-  width: 75px;
+  width: 45px;
   height: 20px;
   text-align: center;
   font-size: 15px;
@@ -510,4 +510,22 @@ a {
   color: #f74b4b;
   font-size: 20px;
   font-weight: 500;
+}
+
+
+.analysis-round-info {
+  display: grid;
+  grid-template-areas: 
+  "N N"
+  "D C"
+  "S S"
+  ;
+}
+
+#analysis-player {
+  grid-area: N;
+}
+
+#analysis-course {
+  grid-area: C;
 }

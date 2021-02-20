@@ -5,7 +5,8 @@ import { Route } from "react-router-dom"
 import Form from "./Form"
 import Form1 from "./Form1"
 import Form2 from "./Form2"
-import {useHistory} from "react-router-dom"
+import { useHistory } from "react-router-dom"
+import Analysis from "./Analysis"
 
 function ParentForm(props) {
   const [player, setPlayer] = useState("")
@@ -20,6 +21,7 @@ function ParentForm(props) {
   const [putts, setPutts] = useState("")
   const [upAndDowns, setUpAndDowns] = useState("")
   const [possibleUpAndDowns, setPossibleUpAndDowns] = useState("")
+  const [fieldsProp, setFieldsProp] =useState({})
   const history = useHistory()
 
 
@@ -39,14 +41,17 @@ function ParentForm(props) {
       upAndDowns: parseInt(upAndDowns),
       possibleUpAndDowns: parseInt(possibleUpAndDowns),
     }
+    setFieldsProp(fields)
 
     await axios.post(baseURL, { fields }, config)
     props.setToggleFetch((curr) => !curr)
-    history.push("/")
+
+    history.push("/form/analysis")
   }
 
 
   return (
+  <div>
     <form onSubmit={handleSubmit}>
     <Route exact path="/form">
         <Form
@@ -82,8 +87,17 @@ function ParentForm(props) {
           possibleUpAndDowns={possibleUpAndDowns}
           setPossibleUpAndDowns={setPossibleUpAndDowns}
           />
+        </Route>
+        
+    <Route exact path="/form/analysis">
+      <Analysis fields={fieldsProp}/>
     </Route>
-    </form>
+      </form>
+
+      {/* <Route exact path="/form/analysis">
+        <Analysis fields={fieldsProp}/>
+      </Route> */}
+  </div>
   )
 }
 

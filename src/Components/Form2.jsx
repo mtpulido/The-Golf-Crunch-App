@@ -34,7 +34,7 @@ function Form2(props) {
         
 
         <div id="form-up-and-downs">
-          <label htmlFor="up-and-downs"> Up & Downs: </label>
+          <label htmlFor="up-and-downs">Up & Downs &lt; 30 yards: </label>
           <input
             className="number-input"
             type="number"
@@ -46,7 +46,7 @@ function Form2(props) {
         </div>
 
         <div id="form-possible-up-and-downs">
-          <label htmlFor="possible-up-and-downs"> Possible Up & Downs: </label>
+          <label htmlFor="possible-up-and-downs"> Attempted Up & Downs: </label>
           <input
             className="number-input"
             type="number"
