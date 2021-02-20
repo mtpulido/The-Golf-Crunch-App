@@ -28,6 +28,7 @@ const Analysis = (props) => {
   let dateFormat = `${dateString.slice(4, 15)}`;
 
   useEffect(() => {
+    window.scrollTo(0, 0)
     setTimeout(() => {
       setLoading(false);
     }, 3000);
