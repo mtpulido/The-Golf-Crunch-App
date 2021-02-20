@@ -674,3 +674,11 @@ a {
 .analysis-container {
   height: 1000px;
 }
+
+
+
+.loading-animation {
+  color: #e7e9ec;
+  font-size: 25px;
+  font-weight: 600;
+}
