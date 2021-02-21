@@ -1,5 +1,10 @@
 import { Link } from "react-router-dom";
 
+
+function scroll() {
+  window.scrollTo(0, 0)
+}
+
 function Nav() {
   return (
     <div className="nav-bar">
@@ -9,8 +14,10 @@ function Nav() {
         </div>
       </Link>
 
-      {/* <img src="http://clipart-library.com/images_k/silhouette-golfer/silhouette-golfer-4.png"/> */}
+      <img src="https://i.imgur.com/J4M5QIO.png?2" alt="" className="golfer" className="logo"
+        onTouchStart={scroll} onClick={scroll}/>
 
+      
       <div className="golf-crunch">
       <h2>
         Golf<br></br>Crunch
