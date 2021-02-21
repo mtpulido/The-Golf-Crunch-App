@@ -11,10 +11,12 @@ function Nav() {
 
       {/* <img src="http://clipart-library.com/images_k/silhouette-golfer/silhouette-golfer-4.png"/> */}
 
+      <div className="golf-crunch">
       <h2>
         Golf<br></br>Crunch
       </h2>
-    </div>
+      </div>
+      </div>
   );
 }
 
