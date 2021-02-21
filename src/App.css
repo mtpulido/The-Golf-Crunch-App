@@ -105,9 +105,7 @@ a {
   border-bottom: solid #8794a4 1px;
   height: 125px;
   padding-top: 25px;
-  padding-right: 15px;
-  padding-left: 15px;
-  max-width: 650px;
+  max-width: 680px;
 }
 
 #scores-player {
@@ -117,6 +115,7 @@ a {
   color: #e7e9ec;
   font-size: 30px;
   font-weight: 600;
+  margin-left: 10px;
 }
 
 #scores-course {
@@ -128,6 +127,7 @@ a {
   font-weight: 500;
   width: 66vw;
   max-width: 430px;
+  margin-left: 10px;
 }
 
 #scores-score {
@@ -135,6 +135,7 @@ a {
   color: #e7e9ec;
   font-size: 35px;
   font-weight: bold;
+  margin-right: 5px;
 }
 
 #scores-detail-button {
@@ -143,6 +144,7 @@ a {
   font-size: 15px;
   height: 30px;
   min-width: 100px;
+  max-width: 680px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -150,7 +152,7 @@ a {
   background-color: #2b7ace;
   border-radius: 25px;
   font-weight: 500;
-  max-width: 650px;
+  margin-right: 5px;
 }
 
 .round-details {
@@ -398,8 +400,8 @@ a {
   background-color: #2b7ace;
   border-radius: 25px;
   font-weight: 500;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-left: 18px;
+  margin-right: 18px;
 }
 
 .form-longgame-container {
@@ -510,7 +512,7 @@ a {
     "S S";
   border-bottom: solid #8794a4 2px;
   margin: 0 10px;
-  max-width: 650px;
+  max-width: 660px;
 }
 
 #analysis-player {
@@ -555,7 +557,7 @@ a {
     "P X X";
   border-bottom: solid #8794a4 2px;
   margin: 0 10px;
-  max-width: 650px;
+  max-width: 660px;
 }
 
 #analysis-driving-label {
@@ -682,8 +684,8 @@ a {
   border-top: 16px solid #3498db;
   width: 120px;
   height: 120px;
-  -webkit-animation: spin 1s linear infinite; /* Safari */
-  animation: spin 1s linear infinite;
+  -webkit-animation: spin .945s linear infinite; /* Safari */
+  animation: spin .945s linear infinite;
 }
 
 /* Safari */

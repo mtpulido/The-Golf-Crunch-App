@@ -26,6 +26,7 @@ function Form1(props) {
             placeholder="...8"
             value={props.fairwaysHit}
             onChange={(e) => props.setFairwaysHit(e.target.value)}
+            required
           />
         </div>
 
@@ -38,6 +39,7 @@ function Form1(props) {
             placeholder="...14"
             value={props.possibleFairways}
             onChange={(e) => props.setPossibleFairways(e.target.value)}
+            required
           />
         </div>
 
@@ -50,6 +52,7 @@ function Form1(props) {
             placeholder="...11"
             value={props.greens}
             onChange={(e) => props.setGreens(e.target.value)}
+            required
           />
         </div>
       </div>

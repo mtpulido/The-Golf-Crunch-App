@@ -26,6 +26,7 @@ function Form(props) {
             placeholder="... John Smith"
             value={props.player}
             onChange={(e) => props.setPlayer(e.target.value)}
+            required
           />
         </div>
 
@@ -38,6 +39,7 @@ function Form(props) {
             placeholder="... Augusta National"
             value={props.course}
             onChange={(e) => props.setCourse(e.target.value)}
+            required
           />
         </div>
 
@@ -50,6 +52,7 @@ function Form(props) {
             placeholder="...72"
             value={props.score}
             onChange={(e) => props.setScore(e.target.value)}
+            required
           />
         </div>
 
@@ -62,6 +65,7 @@ function Form(props) {
             placeholder="...18"
             value={props.holes}
             onChange={(e) => props.setHoles(e.target.value)}
+            required
           />
         </div>
       </div>
