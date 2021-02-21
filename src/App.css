@@ -31,7 +31,10 @@ a {
 
 
 .logo {
-  margin-top:5px;
+  color: transparent;  
+  text-shadow: 0 0 0 #3594fa;
+  font-size: 55px;
+  margin-top: 5px;
 }
 .golf-crunch {
   margin-right: 10px;

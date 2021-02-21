@@ -14,8 +14,9 @@ function Nav() {
         </div>
       </Link>
 
-      <img src="https://i.imgur.com/J4M5QIO.png?2" alt="" className="golfer" className="logo"
-        onTouchStart={scroll} onClick={scroll}/>
+      <div className="logo" onTouchStart={scroll} onClick={scroll}>
+        🏌🏻‍♂️
+      </div>
 
       
       <div className="golf-crunch">
