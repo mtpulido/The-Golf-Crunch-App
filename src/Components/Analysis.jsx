@@ -75,7 +75,7 @@ const Analysis = (props) => {
       setAnalysisScore("Mediocre round 😕. You scored in the 33rd percentile.");
     } else if (score <= 95) {
       setAnalysisScore("Mediocre round 😕. You scored in the 25th percentile.");
-    }  else if (score <= 97) {
+    } else if (score <= 97) {
       setAnalysisScore("Bad round 😫. You scored in the 20th percentile.");
     } else if (score <= 99) {
       setAnalysisScore("Bad round 😫. You scored in the 15th percentile.");
@@ -114,7 +114,9 @@ const Analysis = (props) => {
     } else if (greens / holes < 0.24) {
       setAnalysisGreens("Not good. You need to work on your iron game.");
     } else if (greens / holes < 0.35) {
-      setAnalysisGreens("You're average at hitting the green, keep working on your irons.");
+      setAnalysisGreens(
+        "You're average at hitting the green, keep working on your irons."
+      );
     } else if (greens / holes < 0.46) {
       setAnalysisGreens(
         "Decent work, try to find a bit more consistency with your irons."

@@ -5,7 +5,7 @@ function Form1(props) {
   const [alert, setAlert] = useState("");
 
   const unfilledFields = () => {
-    setAlert("Fill All Input Fields");
+    setAlert("All Fields Required");
   };
 
   useEffect(() => {
