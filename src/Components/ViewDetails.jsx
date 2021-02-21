@@ -74,9 +74,11 @@ function ViewDetails(props) {
         <div id="details-putts">Putts: {putts}</div>
       </div>
 
+      <div className="first-form-next-container">
       <Link to="/scores">
         <div className="next-back-button">Back</div>
-      </Link>
+        </Link>
+        </div>
     </div>
   );
 }
