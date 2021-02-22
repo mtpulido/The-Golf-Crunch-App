@@ -196,7 +196,7 @@ a {
   border-bottom: solid #8794a4 1px;
   height: 150px;
   padding-top: 5px;
-  margin: 10px;
+  margin: 10px 5px 0 5px;
   max-width: 650px;
 }
 
