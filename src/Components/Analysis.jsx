@@ -271,7 +271,7 @@ const Analysis = (props) => {
             <div id="analysis-putts">{analysisPutting}</div>
             <div id="graph-putter">
               <ReactStoreIndicator
-                value={Math.round(Math.pow((holes / putts), 2) * 250)}
+                value={Math.round(Math.pow(holes / putts, 2) * 250)}
                 maxValue={100}
                 width={140}
                 fadedOpacity={25}

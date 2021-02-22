@@ -11,7 +11,6 @@ a {
   text-decoration: none;
 }
 
-
 .graph-text {
   color: #e7e9ec;
   font-size: 25px;
@@ -610,7 +609,6 @@ a {
   margin-left: 5px;
 }
 
-
 .analysis-irons-container {
   display: grid;
   grid-template-areas:
@@ -646,8 +644,6 @@ a {
   margin-left: 5px;
 }
 
-
-
 .analysis-chipping-container {
   display: grid;
   grid-template-areas:
@@ -681,8 +677,6 @@ a {
   padding-top: 15px;
   margin-left: 5px;
 }
-
-
 
 .analysis-putter-container {
   display: grid;
@@ -720,7 +714,6 @@ a {
 .analysis-container {
   height: 1000px;
 }
-
 
 .loading-container {
   display: flex;
