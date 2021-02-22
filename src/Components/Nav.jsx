@@ -14,7 +14,7 @@ function Nav() {
         </div>
       </Link>
 
-      <div className="logo" onTouchStart={scroll} onClick={scroll}>
+      <div className="logo" onTouchEnd={scroll} onClick={scroll}>
         🏌🏻‍♂️
       </div>
 

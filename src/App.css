@@ -36,6 +36,11 @@ a {
   font-size: 55px;
   margin-top: 5px;
 }
+.logo:hover {
+  cursor: pointer;
+}
+
+
 .golf-crunch {
   margin-right: 10px;
 }
@@ -419,6 +424,10 @@ a {
   margin-right: 18px;
 }
 
+.form-navigation:hover {
+  cursor: pointer;
+}
+
 .form-longgame-container {
   display: grid;
   grid-template-areas:
@@ -719,5 +728,12 @@ a {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+
+@media only screen and (min-width: 770px) {
+  .nav-bar {
+  width: 650px;
   }
 }
