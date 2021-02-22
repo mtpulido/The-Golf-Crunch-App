@@ -209,7 +209,8 @@ const Analysis = (props) => {
     }
   }, [loading]);
 
-  //https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_loader for loading animation CSS.
+  // https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_loader for loading animation CSS.
+  // https://reactjsexample.com/react-component-to-display-a-score-with-a-steps-chart/ for graph npm i.
   return (
     <div className="analysis-container">
       {loading ? (
