@@ -1,14 +1,13 @@
 import { Link } from "react-router-dom";
 
-function scroll() {
-  window.scrollTo({
-    top: 0,
-    left: 0,
-    behavior: "smooth",
-  });
-}
-
 function Nav() {
+  function scroll() {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  }
   return (
     <div className="nav-bar">
       <Link to="/">
