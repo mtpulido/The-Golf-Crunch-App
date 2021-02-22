@@ -11,6 +11,13 @@ a {
   text-decoration: none;
 }
 
+
+.graph-text {
+  color: #e7e9ec;
+  font-size: 25px;
+  font-weight: 600;
+}
+
 .button-text {
   color: black;
 }
@@ -531,7 +538,7 @@ a {
     "N N"
     "C D"
     "S S";
-  border-bottom: solid #8794a4 2px;
+  border-bottom: solid #8794a4 3px;
   margin: 0 10px;
   max-width: 660px;
 }
@@ -539,9 +546,9 @@ a {
 #analysis-player {
   grid-area: N;
   color: #e7e9ec;
-  font-size: 25px;
+  font-size: 30px;
   font-weight: 600;
-  margin-top: 25px;
+  margin-top: 15px;
 }
 
 #analysis-course {
@@ -549,7 +556,7 @@ a {
   color: #e7e9ec;
   font-size: 15px;
   font-weight: 500;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 #analysis-date {
@@ -557,7 +564,7 @@ a {
   color: #e7e9ec;
   font-size: 15px;
   font-weight: 500;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 #analysis-score {
@@ -565,123 +572,156 @@ a {
   color: #e7e9ec;
   font-size: 20px;
   font-weight: 500;
-  margin-top: 20px;
-  margin-bottom: 25px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
-.analysis-categories {
+.analysis-driver-container {
   display: grid;
   grid-template-areas:
-    "D F F"
-    "I G G"
-    "C S S"
-    "P X X";
-  border-bottom: solid #8794a4 2px;
+    "L L G G"
+    "F F G G";
+  border-bottom: solid #8794a4 3px;
   margin: 0 10px;
   max-width: 660px;
+  justify-content: space-between;
 }
 
 #analysis-driving-label {
-  grid-area: D;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  grid-area: L;
   color: #e7e9ec;
-  font-size: 25px;
+  font-size: 30px;
   font-weight: 600;
-  border-right: solid #8794a4 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-bottom: solid #8794a4 1px;
-  height: 100px;
 }
 #analysis-fairways {
   grid-area: F;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
   color: #e7e9ec;
   font-size: 20px;
   font-weight: 500;
-  border-bottom: solid #8794a4 1px;
-  height: 100px;
-  padding-left: 20px;
+  margin-top: 15px;
 }
-
-#analysis-irons-label {
-  grid-area: I;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #e7e9ec;
-  font-size: 25px;
-  font-weight: 600;
-  border-right: solid #8794a4 1px;
-  border-bottom: solid #8794a4 1px;
-  height: 100px;
-}
-#analysis-greens {
+#graph-driver {
   grid-area: G;
+  padding-top: 15px;
+  margin-left: 5px;
+}
+
+
+.analysis-irons-container {
+  display: grid;
+  grid-template-areas:
+    "L L G G"
+    "I I G G";
+  border-bottom: solid #8794a4 3px;
+  margin: 0 10px;
+  max-width: 660px;
+  justify-content: space-between;
+}
+#analysis-irons-label {
+  grid-area: L;
+  color: #e7e9ec;
+  font-size: 30px;
+  font-weight: 600;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
+  border-bottom: solid #8794a4 1px;
+}
+
+#analysis-greens {
+  grid-area: I;
   color: #e7e9ec;
   font-size: 20px;
   font-weight: 500;
-  border-bottom: solid #8794a4 1px;
-  height: 100px;
-  padding-left: 20px;
+  margin-top: 15px;
 }
 
+#graph-irons {
+  grid-area: G;
+  padding-top: 15px;
+  margin-left: 5px;
+}
+
+
+
+.analysis-chipping-container {
+  display: grid;
+  grid-template-areas:
+    "L L G G"
+    "S S G G";
+  border-bottom: solid #8794a4 3px;
+  margin: 0 10px;
+  max-width: 660px;
+  justify-content: space-between;
+}
 #analysis-chipping-label {
-  grid-area: C;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  grid-area: L;
   color: #e7e9ec;
-  font-size: 25px;
+  font-size: 30px;
   font-weight: 600;
-  border-right: solid #8794a4 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-bottom: solid #8794a4 1px;
-  height: 100px;
 }
 #analysis-chips {
   grid-area: S;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
   color: #e7e9ec;
   font-size: 20px;
   font-weight: 500;
-  border-bottom: solid #8794a4 1px;
-  height: 100px;
-  padding-left: 20px;
+  margin-top: 15px;
 }
 
+#graph-shortgame {
+  grid-area: G;
+  padding-top: 15px;
+  margin-left: 5px;
+}
+
+
+
+.analysis-putter-container {
+  display: grid;
+  grid-template-areas:
+    "L L G G"
+    "P P G G";
+  border-bottom: solid #8794a4 3px;
+  margin: 0 10px;
+  max-width: 660px;
+  justify-content: space-between;
+}
 #analysis-puting-label {
-  grid-area: P;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  grid-area: L;
   color: #e7e9ec;
-  font-size: 25px;
+  font-size: 30px;
   font-weight: 600;
-  border-right: solid #8794a4 1px;
-  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: solid #8794a4 1px;
 }
 #analysis-putts {
-  grid-area: X;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  grid-area: P;
   color: #e7e9ec;
   font-size: 20px;
   font-weight: 500;
-  height: 100px;
-  padding-left: 20px;
+  margin-top: 15px;
+}
+#graph-putter {
+  grid-area: G;
+  padding-top: 15px;
+  margin-left: 5px;
 }
 
 .analysis-container {
   height: 1000px;
 }
+
+
 .loading-container {
   display: flex;
   flex-direction: column;

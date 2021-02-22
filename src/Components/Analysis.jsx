@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import ReactStoreIndicator from "react-score-indicator";
 
 const Analysis = (props) => {
   const [analysisScore, setAnalysisScore] = useState("");
@@ -225,16 +226,56 @@ const Analysis = (props) => {
             <div id="analysis-score">{analysisScore}</div>
           </div>
 
-          <div className="analysis-categories">
+          <div className="analysis-driver-container">
             <div id="analysis-driving-label">Driver</div>
-            <div id="analysis-irons-label">Irons</div>
-            <div id="analysis-chipping-label">Short Game</div>
-            <div id="analysis-puting-label">Putter</div>
-
             <div id="analysis-fairways">{analysisFairways}</div>
+            <div id="graph-driver">
+              <ReactStoreIndicator
+                value={Math.round((fairwaysHit / possibleFairways) * 125)}
+                maxValue={100}
+                width={140}
+                fadedOpacity={25}
+              />
+            </div>
+          </div>
+
+          <div className="analysis-irons-container">
+            <div id="analysis-irons-label">Irons</div>
             <div id="analysis-greens">{analysisGreens}</div>
-            <div id="analysis-putts">{analysisPutting}</div>
+            <div id="graph-irons">
+              <ReactStoreIndicator
+                value={Math.round((greens / holes) * 133)}
+                maxValue={100}
+                width={140}
+                fadedOpacity={25}
+              />
+            </div>
+          </div>
+
+          <div className="analysis-chipping-container">
+            <div id="analysis-chipping-label">Short Game</div>
             <div id="analysis-chips">{analysisChipping}</div>
+            <div id="graph-shortgame">
+              <ReactStoreIndicator
+                value={Math.round((upAndDowns / possibleUpAndDowns) * 150)}
+                maxValue={100}
+                width={140}
+                fadedOpacity={25}
+              />
+            </div>
+          </div>
+
+          <div className="analysis-putter-container">
+            <div id="analysis-puting-label">Putter</div>
+            <div id="analysis-putts">{analysisPutting}</div>
+            <div id="graph-putter">
+              <ReactStoreIndicator
+                value={Math.round((holes / putts) * 108.5)}
+                maxValue={100}
+                width={140}
+                fadedOpacity={25}
+              />
+            </div>
           </div>
         </div>
       )}
