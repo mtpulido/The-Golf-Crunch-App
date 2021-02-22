@@ -4,13 +4,9 @@ import { Link } from "react-router-dom";
 function Form2(props) {
   const [alert, setAlert] = useState("");
 
-
-
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-
 
   return (
     <div className="form-parent-container">
@@ -26,7 +22,8 @@ function Form2(props) {
             placeholder="...33"
             value={props.putts}
             onChange={(e) => props.setPutts(e.target.value)}
-          required/>
+            required
+          />
         </div>
 
         <div id="form-up-and-downs">
@@ -38,7 +35,8 @@ function Form2(props) {
             placeholder="...3"
             value={props.upAndDowns}
             onChange={(e) => props.setUpAndDowns(e.target.value)}
-          required/>
+            required
+          />
         </div>
 
         <div id="form-possible-up-and-downs">
@@ -50,7 +48,8 @@ function Form2(props) {
             placeholder="...8"
             value={props.possibleUpAndDowns}
             onChange={(e) => props.setPossibleUpAndDowns(e.target.value)}
-          required/>
+            required
+          />
         </div>
       </div>
 
@@ -63,7 +62,10 @@ function Form2(props) {
           <button
             type="submit"
             className="form-navigation"
-            disabled={props.putts === null && props.PossibleUpAndDowns === null && props.upAndDowns === null
+            disabled={
+              props.putts === null &&
+              props.PossibleUpAndDowns === null &&
+              props.upAndDowns === null
             }
           >
             Submit

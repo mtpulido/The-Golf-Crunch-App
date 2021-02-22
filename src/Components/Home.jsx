@@ -1,7 +1,6 @@
 import { Link, Route } from "react-router-dom";
 import { useEffect } from "react";
 function Home() {
-
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);

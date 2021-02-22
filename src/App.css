@@ -29,9 +29,8 @@ a {
   z-index: 2;
 }
 
-
 .logo {
-  color: transparent;  
+  color: transparent;
   text-shadow: 0 0 0 #3594fa;
   font-size: 55px;
   margin-top: 5px;
@@ -39,7 +38,6 @@ a {
 .logo:hover {
   cursor: pointer;
 }
-
 
 .golf-crunch {
   margin-right: 10px;
@@ -181,7 +179,6 @@ a {
   height: 100vh;
   max-width: 650px;
   margin: 0 15px;
-  
 }
 
 .details-info {
@@ -708,8 +705,8 @@ a {
   border-top: 16px solid #3498db;
   width: 120px;
   height: 120px;
-  -webkit-animation: spin .945s linear infinite; /* Safari */
-  animation: spin .945s linear infinite;
+  -webkit-animation: spin 0.945s linear infinite; /* Safari */
+  animation: spin 0.945s linear infinite;
 }
 
 /* Safari */
@@ -731,9 +728,8 @@ a {
   }
 }
 
-
 @media only screen and (min-width: 770px) {
   .nav-bar {
-  width: 650px;
+    width: 650px;
   }
 }

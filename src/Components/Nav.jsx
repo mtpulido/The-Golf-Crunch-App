@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom";
 
-
 function scroll() {
-  window.scrollTo(0, 0)
+  window.scrollTo(0, 0);
 }
 
 function Nav() {
@@ -18,13 +17,12 @@ function Nav() {
         🏌🏻‍♂️
       </div>
 
-      
       <div className="golf-crunch">
-      <h2>
-        Golf<br></br>Crunch
-      </h2>
+        <h2>
+          Golf<br></br>Crunch
+        </h2>
       </div>
-      </div>
+    </div>
   );
 }
 

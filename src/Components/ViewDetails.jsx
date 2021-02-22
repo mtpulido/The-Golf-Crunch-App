@@ -75,10 +75,10 @@ function ViewDetails(props) {
       </div>
 
       <div className="first-form-next-container">
-      <Link to="/scores">
-        <div className="next-back-button">Back</div>
+        <Link to="/scores">
+          <div className="next-back-button">Back</div>
         </Link>
-        </div>
+      </div>
     </div>
   );
 }

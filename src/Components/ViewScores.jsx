@@ -12,7 +12,7 @@ function ViewScores(props) {
       <Link to={`/scores/${props.golfRound.id}`}>
         <div id="scores-detail-button">View Details</div>
       </Link>
-      </div>
+    </div>
   );
 }
 
