@@ -2,6 +2,8 @@
 
 The Golf Crunch
 
+https://golf-crunch.netlify.app/
+
 ## Project Description
 
 The Golf Crunch seeks to improve the experience of golfers across all skill levels. It allows people to compile their stats and score from a round of golf, track them, and see how they measure up to others, all through a mobile app. It's a place for people to see where specifically in their golf game they need to spend time practicing, and translate that information to lower scores.
@@ -56,12 +58,12 @@ records: [
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|Feb. 13-16| project planning/preparation/approval | Incomplete
-|Feb. 16| App.js layout, Nav Bar, get request to render all rounds | Incomplete
-|Feb. 17|  Form to post rounds, render mission statement | Incomplete
-|Feb. 18| Style with Grid/flexbox and basic CSS | Incomplete
-|Feb. 19| Media queries, responsive design , Finish MVP | Incomplete
-|Feb. 20-22| Tackle Post MVP items | Incomplete
+|Feb. 13-16| project planning/preparation/approval | complete
+|Feb. 16| App.js layout, Nav Bar, get request to render all rounds | complete
+|Feb. 17|  Form to post rounds, render mission statement | complete
+|Feb. 18| Style with Grid/flexbox and basic CSS | complete
+|Feb. 19| Media queries, responsive design , Finish MVP | complete
+|Feb. 20-22| Tackle Post MVP items | complete
 |Feb. 23| Presentations | Incomplete
 
 ## Timeframes
@@ -69,21 +71,19 @@ records: [
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | planning/prep and creating readme | H | 8hrs| 8hrs | 8hrs |
-| .services for hiding/securing API information | H | 1hr|  |  |
-| App.js/index.js structure for rendering and Linking/Routing | H | 1.5hr|  |  |
-| component basic creation/organization/imports | H | 2hr|  |  |
-| Homepage button creation/routing | H | 2hr|  |  |
-| Basic Nav Bar | H | 1hr|  |  | 
-| conditionally render Home Button utilizing Link | H | 1.5hr|  |  |
-| Render API data in view scores | H | 2hr|  |  |
-| Structure API data via Grid/flexbox | H | 2hr|  |  |
-| convert iso8601 to local date in view scores | H | 2hr|  |  |
-| Render form via Post request in enter round| H | 2hr|  |  |
-| Structure form via GRID/flexbox | H | 4hr|  |  |
-| Render mission statement in mission statement | H | 1.5hr|  |  |
-| CSS styling for each component | H | 4hr|  |  |
-| Media Queries/responsive design | H | 4hr|  |  |
-| Total | H | 38.5hrs|  |  |
+| .services for hiding/securing API information | H | 1hr| 1hr | 1hr |
+| App.js/index.js structure for rendering and Linking/Routing | H | 1.5hr| 1.5hr | 1.5hr |
+| component basic creation/organization/imports | H | 2hr| 2hr | 2hr  |
+| Homepage button creation/routing | H | 2hr| 2hr | 2hr |
+| Nav Bar | H | 1hr| 1hr | 1hr | 
+| Render API data in view scores | H | 2hr| 2hr | 2hr |
+| Structure API data via Grid/flexbox | H | 2hr| 2hr | 2hr |
+| convert iso8601 to local date in view scores | H | 2hr| 1hr | 1hr |
+| Render form via Post request in enter round| H | 2hr| 4hr | 4hr |
+| Structure form via GRID/flexbox | H | 4hr| 3hr | 3hr |
+| CSS styling for each component | H | 4hr| 7hr | 7hr |
+| Media Queries/responsive design | H | 4hr| .5hr | .5hr |
+| Total | H | 38.5hrs| 38hrs | 38hrs |
 
 ## SWOT Analysis
 
