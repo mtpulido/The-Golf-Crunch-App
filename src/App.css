@@ -139,7 +139,7 @@ a {
   justify-content: left;
   grid-area: P;
   color: #e7e9ec;
-  font-size: 30px;
+  font-size: 28px;
   font-weight: 600;
   margin-left: 10px;
 }
@@ -149,17 +149,18 @@ a {
   justify-content: left;
   grid-area: C;
   color: #e7e9ec;
-  font-size: 19px;
+  font-size: 18px;
   font-weight: 500;
   width: 66vw;
   max-width: 430px;
   margin-left: 10px;
+  padding-top: 4px;
 }
 
 #scores-score {
   grid-area: S;
   color: #e7e9ec;
-  font-size: 35px;
+  font-size: 30px;
   font-weight: bold;
   margin-right: 5px;
 }
@@ -720,7 +721,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 500px;
+  height: 450px;
   max-width: 650px;
 }
 
